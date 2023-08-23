@@ -10,6 +10,7 @@ import { endpoint } from 'src/core/endpoints';
 import { CardInfoResp, CardItems } from 'src/core/types';
 import { useCreditCardShared } from '../credit-card.shared';
 import css from './mobile.module.scss';
+import clsx from 'clsx';
 
 export const Mobile: React.FC = () => {
   const cardInfo = (useMatch().ownData as unknown) || {};
@@ -86,7 +87,7 @@ export const Mobile: React.FC = () => {
           </Button>
           <Button
             color="white"
-            className={`${css['footer__btn']} ${css['footer__btn--cancel']}`}
+            className={clsx(css['footer__btn'], css['footer__btn--cancel'])}
             onClick={() => history.back()}
           >
             Cancel
