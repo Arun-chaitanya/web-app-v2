@@ -1,10 +1,10 @@
 import { useMatch } from '@tanstack/react-location';
-import { TopFixedMobile } from 'src/components/templates/top-fixed-mobile/top-fixed-mobile';
-import { Header } from 'src/components/atoms/header/header';
-import { Button } from 'src/components/atoms/button/button';
-import { Card } from 'src/components/atoms/card/card';
-import { Input } from 'src/components/atoms/input/input';
-import { Sticky } from 'src/components/templates/sticky';
+import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
+import { Header } from '@atoms/header/header';
+import { Button } from '@atoms/button/button';
+import Card from '@atoms/card';
+import { Input } from '@atoms/input/input';
+import { Sticky } from '@templates/sticky';
 import { printWhen } from 'src/core/utils';
 import { endpoint } from 'src/core/endpoints';
 import { CardInfoResp, CardItems } from 'src/core/types';
