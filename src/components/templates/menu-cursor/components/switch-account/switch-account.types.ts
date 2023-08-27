@@ -1,4 +1,4 @@
-import { IdentityReq } from 'src/core/types';
+import { IdentityReq } from '@core/types';
 
 export type SwitchAccountProps = {
   open: boolean;

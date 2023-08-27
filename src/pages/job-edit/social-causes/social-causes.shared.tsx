@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { socialCausesToCategoryAdaptor } from 'src/core/adaptors';
+import { socialCausesToCategoryAdaptor } from '@core/adaptors';
 
 export const useSocialCausesShared = (oldSelected: string[]) => {
   const [socialCauses, setSocialCauses] = useState(socialCausesToCategoryAdaptor());

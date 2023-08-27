@@ -1,5 +1,5 @@
 import css from './job-card.module.scss';
-import { printWhen } from '../../../core/utils';
+import { printWhen } from '@core/utils';
 import { ProfileView } from '../profile-view/profile-view';
 import { JobCardProps } from './job-card.types';
 

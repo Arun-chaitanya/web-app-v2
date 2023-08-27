@@ -7,11 +7,11 @@ import { Button } from '@atoms/button/button';
 import { Dialog } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { DialogReview } from '../dialog-review/dialog-review';
-import { socialCausesToDropdownAdaptor } from '../../../core/adaptors';
+import { socialCausesToDropdownAdaptor } from '@core/adaptors';
 import { useSelector } from 'react-redux';
-import { IdentityReq } from '../../../core/types';
-import { RootState } from '../../../store/store';
-import { dialog } from 'src/core/dialog/dialog';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
+import { dialog } from '@core/dialog/dialog';
 
 export const DialogCreate = ({ onClose, setFeedList }: DialogCreateProps) => {
   const [openDialog, setOpenDialog] = useState(false);

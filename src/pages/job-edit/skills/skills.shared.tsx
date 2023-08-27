@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { skillsToCategoryAdaptor } from 'src/core/adaptors';
+import { skillsToCategoryAdaptor } from '@core/adaptors';
 
 export const useSkillsShared = (oldSelected: string[]) => {
   const [socialCauses, setSocialCauses] = useState(skillsToCategoryAdaptor());

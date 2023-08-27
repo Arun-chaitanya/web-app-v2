@@ -1,7 +1,7 @@
-import { required } from 'src/core/form';
-import { FormModel } from 'src/core/form/useForm/useForm.types';
+import { required } from '@core/form';
+import { FormModel } from '@core/form/useForm/useForm.types';
 import { ProfileReq } from '../profile-user/profile-user.types';
-import { minArrayLength, maxArrayLength } from 'src/core/form/customValidators/customValidators';
+import { minArrayLength, maxArrayLength } from '@core/form/customValidators/customValidators';
 
 export function generateFormModel(profile: ProfileReq): FormModel {
   return {

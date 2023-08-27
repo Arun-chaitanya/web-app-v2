@@ -1,5 +1,5 @@
-import { get } from 'src/core/http';
-import { endpoint } from 'src/core/endpoints';
+import { get } from '@core/http';
+import { endpoint } from '@core/endpoints';
 
 export async function getCreditCardInfo() {
   return get('/payments/cards').then(({ data }) => data);

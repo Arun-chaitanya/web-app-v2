@@ -1,6 +1,6 @@
 import React from 'react';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {LevelItem} from '../components/molecules/level-item/level-item';
+import {LevelItem} from '@molecules/level-item/level-item';
 
 export default {
   title: 'ATOM/LevelItem',

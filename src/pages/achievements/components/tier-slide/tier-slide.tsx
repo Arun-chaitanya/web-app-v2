@@ -1,4 +1,4 @@
-import { TIERS } from 'src/constants/TIERS_TABLE';
+import { TIERS } from '@constants/TIERS_TABLE';
 import css from './tier-slide.module.scss';
 import { TierSlideProps } from './tier-slide.types';
 import { TierBadge } from '@atoms/tier-badge/tier-badge';

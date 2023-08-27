@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import Card from '@atoms/card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
 import { JobCardList } from '@organisms/job-card-list/job-card-list';
 import { Accordion } from '@atoms/accordion/accordion';
 import { ProfileCard } from '@templates/profile-card';
-import { printWhen } from 'src/core/utils';
-import { IdentityReq } from 'src/core/types';
+import { printWhen } from '@core/utils';
+import { IdentityReq } from '@core/types';
 import { MyJobs } from '../my-jobs.types';
 import { useMyJobShared } from '../my-jobs.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

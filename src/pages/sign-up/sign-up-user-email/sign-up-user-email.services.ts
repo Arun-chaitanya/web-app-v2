@@ -1,4 +1,4 @@
-import { post } from '../../../core/http';
+import { post } from '@core/http';
 
 export async function register(payload: { email: string }) {
   return post('auth/register', payload);

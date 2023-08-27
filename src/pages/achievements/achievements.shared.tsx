@@ -9,8 +9,8 @@ import { Tab } from '@atoms/tabs/tabs.types';
 import { JobHistoryList } from '@organisms/job-history-list/job-history-list';
 import { Tier } from './components/tier/tier';
 import { JobHistoryItemProps } from '@molecules/job-history-item/job-history-item.types';
-import { Endpoints } from 'src/core/endpoints/index.types';
-import { isoToStandard } from 'src/core/time';
+import { Endpoints } from '@core/endpoints/index.types';
+import { isoToStandard } from '@core/time';
 
 export const useAchievementsShared = () => {
   const { badges, impactPointHistory } = useMatch().ownData as Loader;

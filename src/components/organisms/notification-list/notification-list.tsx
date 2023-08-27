@@ -1,10 +1,10 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { NotificationListProps, Notifications } from './notification-list.types';
-import { NotificationItem } from '../../molecules/notification-item/notification-item';
-import { dialog } from 'src/core/dialog/dialog';
-import { IdentityReq } from 'src/core/types';
+import { NotificationItem } from '@molecules/notification-item/notification-item';
+import { dialog } from '@core/dialog/dialog';
+import { IdentityReq } from '@core/types';
 import css from './notification-list.module.scss';
 
 export const NotificationList = ({ list, onMorePageClick, showSeeMore, route }: NotificationListProps): JSX.Element => {

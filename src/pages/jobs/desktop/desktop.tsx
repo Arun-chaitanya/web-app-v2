@@ -3,7 +3,7 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import { ProfileCard } from '@templates/profile-card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
 import { JobList } from '@organisms/job-list/job-list';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useJobsShared } from '../jobs.shared';
 import css from './desktop.module.scss';
 

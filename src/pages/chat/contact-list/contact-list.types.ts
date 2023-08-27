@@ -1,4 +1,4 @@
-import { FollowingsReq, Pagination, SummaryReq } from 'src/core/types';
+import { FollowingsReq, Pagination, SummaryReq } from '@core/types';
 
 export type Resolver = {
   summery: Pagination<SummaryReq[]>;

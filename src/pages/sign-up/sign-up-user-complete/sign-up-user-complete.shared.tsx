@@ -1,13 +1,13 @@
 import { changePasswordDirect } from './sign-up-user-complete.services';
-import { useForm } from '../../../core/form';
+import { useForm } from '@core/form';
 import { formModel } from './sign-up-user-complete.form';
-import { handleError } from '../../../core/http';
-import { getIdentities } from '../../../core/api';
+import { handleError } from '@core/http';
+import { getIdentities } from '@core/api';
 import { updateProfile } from './sign-up-user.complete.services';
 import { useDispatch } from 'react-redux';
-import { setIdentityList } from '../../../store/reducers/identity.reducer';
+import { setIdentityList } from '@store/reducers/identity.reducer';
 import { useNavigate } from '@tanstack/react-location';
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
 
 export const useSignUpUserCompleteShared = () => {
   const navigate = useNavigate();

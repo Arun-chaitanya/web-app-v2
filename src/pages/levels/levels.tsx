@@ -1,4 +1,4 @@
-import {TwoThird} from '../../components/templates/two-third/two-third';
+import {TwoThird} from '@templates/two-third/two-third';
 import {Body} from './body/body';
 import {Header} from './header/header';
 import {LevelsProps} from './levels.types';

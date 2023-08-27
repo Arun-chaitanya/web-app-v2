@@ -1,4 +1,4 @@
-import { ProfileReq } from 'src/pages/profile-user/profile-user.types';
+import { ProfileReq } from '@pages/profile-user/profile-user.types';
 
 export type UserProfileCardProps = {
   user: ProfileReq;

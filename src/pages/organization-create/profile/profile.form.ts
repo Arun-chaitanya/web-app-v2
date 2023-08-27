@@ -1,7 +1,7 @@
-import { required } from '../../../core/form';
-import { email } from '../../../core/form/customValidators/customValidators';
-import { FormModel } from '../../../core/form/useForm/useForm.types';
-import { CreateOrgWizard } from '../../../store/reducers/createOrgWizard.reducer';
+import { required } from '@core/form';
+import { email } from '@core/form/customValidators/customValidators';
+import { FormModel } from '@core/form/useForm/useForm.types';
+import { CreateOrgWizard } from '@store/reducers/createOrgWizard.reducer';
 
 export function formModel(formState: CreateOrgWizard): FormModel {
   return {

@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import Card from '@atoms/card';
 import { Accordion } from '@atoms/accordion/accordion';
@@ -10,14 +10,14 @@ import { Typography } from '@atoms/typography/typography';
 import { ProfileCard } from '@templates/profile-card';
 import { Button } from '@atoms/button/button';
 import { CardMenu } from '@molecules/card-menu/card-menu';
-import { translateRemotePreferences } from 'src/constants/PROJECT_REMOTE_PREFERENCE';
-import { translatePaymentTerms } from 'src/constants/PROJECT_PAYMENT_SCHEME';
-import { translatePaymentType } from 'src/constants/PROJECT_PAYMENT_TYPE';
-import { IdentityReq } from 'src/core/types';
-import { printWhen } from 'src/core/utils';
+import { translateRemotePreferences } from '@constants/PROJECT_REMOTE_PREFERENCE';
+import { translatePaymentTerms } from '@constants/PROJECT_PAYMENT_SCHEME';
+import { translatePaymentType } from '@constants/PROJECT_PAYMENT_TYPE';
+import { IdentityReq } from '@core/types';
+import { printWhen } from '@core/utils';
 import { useCompleteMissionShared } from '../complete-mission.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = (): JSX.Element => {
   const navigate = useNavigate();

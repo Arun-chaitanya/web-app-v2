@@ -1,5 +1,5 @@
 import { Validator } from '@atoms/password-quality/password-quality.types';
-import { post } from '../../../core/http';
+import { post } from '@core/http';
 
 export function updateProfile(payload: { username: string; firstName: string; lastName: string }) {
   const adopted = {

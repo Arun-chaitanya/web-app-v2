@@ -1,4 +1,4 @@
-import { BADGES } from '../../../constants/constants';
+import { BADGES } from '@constants/constants';
 
 export type ImpactCategoryItemProps = {
   color: string;

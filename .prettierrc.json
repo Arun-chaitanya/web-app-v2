@@ -4,6 +4,7 @@
   "semi": true,
   "importOrder": [
     "^(?!(@|[./])).*",
+    "^@(mui|visx|onflow)(.*)$",
     "^@(types)(.*)$",
     "^@(dapp|store|hooks)(.*)$",
     "^@(atoms|molecules|organisms|templates|core|pages)(.*)$",

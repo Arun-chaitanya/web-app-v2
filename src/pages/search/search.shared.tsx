@@ -3,9 +3,9 @@ import { search } from './desktop/search.services';
 import { PayloadModel } from './desktop/search.types';
 import { useMatch, useNavigate, useLocation, useRouter } from '@tanstack/react-location';
 import { useEffect, useState } from 'react';
-import { Pagination } from 'src/core/types';
-import { removeEmptyArrays } from 'src/core/utils';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { Pagination } from '@core/types';
+import { removeEmptyArrays } from '@core/utils';
+import { isTouchDevice } from '@core/device-type-detector';
 
 export const useSearchShared = () => {
   const resolver = useMatch();

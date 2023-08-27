@@ -1,8 +1,8 @@
 import axios, { AxiosRequestConfig, AxiosError } from 'axios';
 import { dialog } from './dialog/dialog';
-import { hideSpinner, showSpinner } from '../store/reducers/spinner.reducer';
-import store from '../store/store';
-import translate from '../translations';
+import { hideSpinner, showSpinner } from '@store/reducers/spinner.reducer';
+import store from '@store/store';
+import translate from '@translations';
 import { nonPermanentStorage } from './storage/non-permanent';
 
 export const http = axios.create({

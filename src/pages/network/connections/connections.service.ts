@@ -1,6 +1,6 @@
-import { endpoint } from 'src/core/endpoints';
-import { toRelativeTime } from 'src/core/relative-time';
-import { ConnectStatus, ConnectionItem } from 'src/core/types';
+import { endpoint } from '@core/endpoints';
+import { toRelativeTime } from '@core/relative-time';
+import { ConnectStatus, ConnectionItem } from '@core/types';
 
 export function getConnections(payload: {
   page: number;

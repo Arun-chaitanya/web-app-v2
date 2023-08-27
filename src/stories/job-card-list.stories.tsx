@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { JobCardProps } from '../components/molecules/job-card/job-card.types';
-import { JobCardList } from '../components/organisms/job-card-list/job-card-list';
+import { JobCardProps } from '@molecules/job-card/job-card.types';
+import { JobCardList } from '@organisms/job-card-list/job-card-list';
 
 export default {
   title: 'MOLECULES/JobCardList',

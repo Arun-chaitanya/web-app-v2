@@ -1,19 +1,19 @@
 import { useState } from 'react';
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import store from 'src/store/store';
-import { hideSpinner, showSpinner } from 'src/store/reducers/spinner.reducer';
+import store from '@store/store';
+import { hideSpinner, showSpinner } from '@store/reducers/spinner.reducer';
 import css from './hired.module.scss';
 import { Accordion } from '@atoms/accordion/accordion';
 import { missionToApplicantListPayAdaptor } from '../../../job-offer-reject.services';
 import { HiredProps } from './hired.types';
-import { Loader } from 'src/pages/job-offer-reject/job-offer-reject.types';
+import { Loader } from '@pages/job-offer-reject/job-offer-reject.types';
 import { ApplicantListPay } from '@molecules/applicant-list-pay/applicant-list-pay';
-import { endpoint } from '../../../../../core/endpoints';
-import { dialog } from '../../../../../core/dialog/dialog';
-import Dapp from 'src/dapp';
+import { endpoint } from '@core/endpoints';
+import { dialog } from '@core/dialog/dialog';
+import Dapp from '@dapp';
 import { FeedbackModal } from '../feedback-modal';
 import { Rate } from '../feedback-modal/feedback-modal.types';
-import { useAlert } from 'src/hooks/use-alert';
+import { useAlert } from '@hooks/use-alert';
 
 export const Hired = (props: HiredProps): JSX.Element => {
   const navigate = useNavigate();

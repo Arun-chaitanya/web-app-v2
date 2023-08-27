@@ -1,9 +1,9 @@
 import { useNavigate } from '@tanstack/react-location';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
-import { handleError } from 'src/core/http';
+import { getFormValues } from '@core/form/customValidators/formValues';
+import { handleError } from '@core/http';
 import { formModel } from './sign-up-user-email.form';
 import { preRegister, register } from './sign-up-user-email.services';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 
 export const useSignUpUserEmailShared = () => {
   const form = useForm(formModel);

@@ -1,8 +1,8 @@
 import { Dialog } from '@mui/material';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { IdentityReq } from '../../../core/types';
-import { RootState } from '../../../store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Button } from '@atoms/button/button';
 import Card from '@atoms/card';

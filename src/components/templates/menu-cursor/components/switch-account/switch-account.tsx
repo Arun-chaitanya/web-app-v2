@@ -1,20 +1,20 @@
 import css from './switch-account.module.scss';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { useDispatch, useSelector } from 'react-redux';
-import { AccountsModel } from 'src/pages/sidebar/mobile/mobile.types';
+import { AccountsModel } from '@pages/sidebar/mobile/mobile.types';
 import { ProfileView } from '@molecules/profile-view/profile-view';
-import { logout, setIdentityHeader } from 'src/pages/sidebar/sidebar.service';
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
+import { logout, setIdentityHeader } from '@pages/sidebar/sidebar.service';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
 import { useNavigate } from '@tanstack/react-location';
 import { CSSProperties, useCallback, useEffect, useRef, useState } from 'react';
 import { Divider } from '@templates/divider/divider';
 import { SwitchAccountProps } from './switch-account.types';
 import { ChangePasswordModal } from '../change-password-modal/change-password-modal';
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
-import { printWhen } from 'src/core/utils';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
+import { printWhen } from '@core/utils';
 import { Button } from '@atoms/button/button';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 let timer: NodeJS.Timeout;
 

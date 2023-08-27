@@ -1,11 +1,11 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useDispatch, useSelector } from 'react-redux';
-import { IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 import { Button } from '@atoms/button/button';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { Search } from '@atoms/search/search';
-import { resetCreatePostWizard, setPostCausesTags } from 'src/store/reducers/createPostWizard.reducer';
+import { resetCreatePostWizard, setPostCausesTags } from '@store/reducers/createPostWizard.reducer';
 import { useSocialCausesShared } from '../social-causes.shared';
 import css from './mobile.module.scss';
 

@@ -5,13 +5,13 @@ import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import css from './mobile.module.scss';
 import { Textarea } from '@atoms/textarea/textarea';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
+import { COUNTRIES } from '@constants/COUNTRIES';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
-import { COUNTRY_CODES } from 'src/constants/COUNTRY_CODE';
+import { COUNTRY_CODES } from '@constants/COUNTRY_CODE';
 import { Category } from '@molecules/category/category';
 import { useProfileOrganizationEditShared } from '../profile-organization-edit.shared';
-import { socialCausesToCategoryAdaptor } from 'src/core/adaptors';
-import { ORGANIZATION_TYPE } from 'src/constants/ORGANIZATION_TYPE';
+import { socialCausesToCategoryAdaptor } from '@core/adaptors';
+import { ORGANIZATION_TYPE } from '@constants/ORGANIZATION_TYPE';
 
 export const Mobile = (): JSX.Element => {
   const { onSave, onAvatarEdit, onCoverEdit, avatarImage, coverImage, updateCityList, form, cities, organization } =

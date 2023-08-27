@@ -1,7 +1,7 @@
-import { get } from 'src/core/http';
-import { toRelativeTime } from 'src/core/relative-time';
-import { FollowingsReq, Pagination, SummaryReq } from 'src/core/types';
-import store, { RootState } from 'src/store/store';
+import { get } from '@core/http';
+import { toRelativeTime } from '@core/relative-time';
+import { FollowingsReq, Pagination, SummaryReq } from '@core/types';
+import store, { RootState } from '@store/store';
 import { ContactItem } from '@molecules/contact-item/contact-item.types';
 
 export async function getFollowings(payload: { page?: number; name: string }): Promise<Pagination<FollowingsReq[]>> {

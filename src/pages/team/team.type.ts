@@ -1,4 +1,4 @@
-import { FollowingsReq, MemberIdentity, Pagination } from 'src/core/types';
+import { FollowingsReq, MemberIdentity, Pagination } from '@core/types';
 
 export type Resolver = {
   members: Pagination<MemberIdentity[]>;

@@ -1,6 +1,6 @@
 import css from './mobile.module.scss';
 import { useState } from 'react';
-import { COUNTRIES } from '../../../../constants/COUNTRIES';
+import { COUNTRIES } from '@constants/COUNTRIES';
 import { Button } from '@atoms/button/button';
 import { Input } from '@atoms/input/input';
 import { Steps } from '@atoms/steps/steps';
@@ -11,7 +11,7 @@ import { formModel } from '../profile.form';
 import { Checkbox } from '@atoms/checkbox/checkbox';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
 import { getCityList } from '../../../job-create/info/info.services';
-import { citiesToCategories } from '../../../../core/adaptors';
+import { citiesToCategories } from '@core/adaptors';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 

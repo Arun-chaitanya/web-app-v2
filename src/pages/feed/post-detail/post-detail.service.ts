@@ -1,5 +1,5 @@
-import { get, post } from 'src/core/http';
-import { LikeResp, SearchReq } from 'src/core/types';
+import { get, post } from '@core/http';
+import { LikeResp, SearchReq } from '@core/types';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 
 export function likeComment(postId: string, commentId: string): Promise<LikeResp> {

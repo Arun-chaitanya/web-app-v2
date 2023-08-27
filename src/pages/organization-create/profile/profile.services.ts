@@ -1,6 +1,6 @@
 import { AnyAction } from '@reduxjs/toolkit';
 import { Dispatch, SetStateAction } from 'react';
-import { citiesToCategories } from '../../../core/adaptors';
+import { citiesToCategories } from '@core/adaptors';
 import {
   CreateOrgWizard,
   setAddress,
@@ -14,7 +14,7 @@ import {
   setPhoneNumber,
   setWebsite,
   setAgreement,
-} from '../../../store/reducers/createOrgWizard.reducer';
+} from '@store/reducers/createOrgWizard.reducer';
 import { DropdownItem } from '@atoms/dropdown/dropdown.types';
 import { getCityList } from '../../job-create/info/info.services';
 

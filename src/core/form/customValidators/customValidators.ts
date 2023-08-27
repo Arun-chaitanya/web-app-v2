@@ -1,4 +1,4 @@
-import { REGEX } from '../../../constants/REGEX';
+import { REGEX } from '@constants/REGEX';
 import { ControlPrimitiveValue, Validator } from '../useForm/useForm.types';
 
 export const email = (): Validator => ({

@@ -8,12 +8,12 @@ import { OfferModal } from '../../offer/offer-modal';
 import { Hired } from '../components/hired/hired';
 import { Offered } from '../components/offered/offered';
 import { Overview } from '../components/overview/overview';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { Loader } from '../../job-offer-reject.types';
-import { ApplicantResp } from 'src/core/types';
+import { ApplicantResp } from '@core/types';
 import { getApplicantDetail, jobOfferRejectLoader, rejectApplicant } from '../../job-offer-reject.services';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = (): JSX.Element => {
   const navigate = useNavigate();

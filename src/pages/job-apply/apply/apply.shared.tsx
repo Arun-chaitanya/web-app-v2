@@ -9,12 +9,12 @@ import {
   submit,
 } from './apply.services';
 import { Job } from '@organisms/job-list/job-list.types';
-import { QuestionsRes, UserType } from 'src/core/types';
-import { FormModel } from 'src/core/form/useForm/useForm.types';
+import { QuestionsRes, UserType } from '@core/types';
+import { FormModel } from '@core/form/useForm/useForm.types';
 import { generateFormModel } from './apply.form';
-import { useForm } from 'src/core/form';
-import { dialog } from 'src/core/dialog/dialog';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
+import { useForm } from '@core/form';
+import { dialog } from '@core/dialog/dialog';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 import { Textarea } from '@atoms/textarea/textarea';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 

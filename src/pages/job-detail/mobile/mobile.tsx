@@ -8,14 +8,14 @@ import { Divider } from '@templates/divider/divider'
 import {
   skillsToCategory,
   socialCausesToCategory
-} from '../../../core/adaptors'
-import { printWhen } from '../../../core/utils'
+} from '@core/adaptors'
+import { printWhen } from '@core/utils'
 import { Header } from '@atoms/header/header'
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile'
 import { useJobDetailShared } from '../job-detail.shared'
 import { ExpandableText } from '@atoms/expandable-text'
-import { AuthGuard } from 'src/core/auth-guard/auth-guard'
-import { useAuth } from 'src/hooks/use-auth'
+import { AuthGuard } from '@core/auth-guard/auth-guard'
+import { useAuth } from '@hooks/use-auth'
 import { useEffect } from 'react'
 import { getJobStructuresData } from '../job-details.jobStructuredData'
 

@@ -5,8 +5,8 @@ import { Header } from '@atoms/header/header';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import { Toggle } from '@atoms/toggle';
 import { Button } from '@atoms/button/button';
-import { printWhen } from 'src/core/utils';
-import translate from 'src/translations';
+import { printWhen } from '@core/utils';
+import translate from '@translations';
 import { useSettingsShared } from '../settings.shared';
 import css from './mobile.module.scss';
 

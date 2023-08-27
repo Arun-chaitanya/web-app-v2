@@ -1,4 +1,4 @@
-import { CardItems } from 'src/core/types';
+import { CardItems } from '@core/types';
 
 export interface PaymentMethodsProps {
   crypto_method: React.ReactNode;

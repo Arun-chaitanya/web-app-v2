@@ -1,9 +1,9 @@
 import css from './claim-points.module.scss';
 import { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { generateQRCode } from './claim-points.services';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { Capacitor } from '@capacitor/core';
 import { encode } from 'js-base64';
 

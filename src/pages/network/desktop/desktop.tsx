@@ -4,9 +4,9 @@ import Card from '@atoms/card';
 import { useNetworkShared } from '../network.shared';
 import { ProfileCard } from '@templates/profile-card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

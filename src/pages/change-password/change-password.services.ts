@@ -1,4 +1,4 @@
-import { post } from '../../core/http';
+import { post } from '@core/http';
 import { Validator } from '@atoms/password-quality/password-quality.types';
 
 export async function changePassword(payload: { current_password: string; password: string }) {

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IdentityReq } from '../../core/types';
+import { IdentityReq } from '@core/types';
 
 export const identitySlice = createSlice({
   name: 'identity',

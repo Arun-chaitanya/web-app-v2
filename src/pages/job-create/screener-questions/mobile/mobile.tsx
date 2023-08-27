@@ -1,4 +1,4 @@
-import store from 'src/store/store';
+import store from '@store/store';
 import { Button } from '@atoms/button/button';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { Textarea } from '@atoms/textarea/textarea';
@@ -13,11 +13,11 @@ import {
   setQuestionProjectIds,
   setQuestionType,
   setRequiredQuestion,
-} from 'src/store/reducers/createQuestionWizard.reducer';
-import { resetCreatePostWizard } from 'src/store/reducers/createPostWizard.reducer';
-import { dialog } from 'src/core/dialog/dialog';
-import { printWhen } from 'src/core/utils';
-import { CreateQuestionPayload } from 'src/core/types';
+} from '@store/reducers/createQuestionWizard.reducer';
+import { resetCreatePostWizard } from '@store/reducers/createPostWizard.reducer';
+import { dialog } from '@core/dialog/dialog';
+import { printWhen } from '@core/utils';
+import { CreateQuestionPayload } from '@core/types';
 import { QUESTION_TYPE, createQuestion } from '../screener-questions.service';
 import { useScreenerQuestionsShared } from '../screener-questions.shared';
 import css from './mobile.module.scss';

@@ -1,7 +1,7 @@
 import Card from '@atoms/card';
 import { SelectCard } from '@molecules/select-card';
 import { Link } from '@atoms/link/link';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { PaymentMethodsProps } from './payment-methods.types';
 import css from './payment-methods.module.scss';
 import clsx from 'clsx';

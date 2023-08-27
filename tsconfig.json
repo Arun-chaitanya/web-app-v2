@@ -26,11 +26,13 @@
       "@constants/*": ["src/constants/*"],
       "@core/*": ["src/core/*"],
       "@dapp/*": ["src/dapp/*"],
+      "@dapp": ["src/dapp"],
       "@hooks/*": ["src/hooks/*"],
       "@pages/*": ["src/pages/*"],
       "@store/*": ["src/store/*"],
       "@styles/": ["src/styles/*"],
-      "@translations/*": ["src/translations/*"]
+      "@translations/*": ["src/translations/*"],
+      "@translations": ["src/translations"]
     }
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],

@@ -4,7 +4,7 @@ import { Input } from '@atoms/input/input';
 import { Button } from '@atoms/button/button';
 import { useChangePasswordShared } from '../change-password.shared';
 import { Header } from '@atoms/header-v2/header';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import Card from '@atoms/card';
 
 export const Desktop = (): JSX.Element => {

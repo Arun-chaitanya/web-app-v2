@@ -9,10 +9,10 @@ import { Button } from '@atoms/button/button';
 import { BackLink } from '@molecules/back-link';
 import { EditOrganization } from './edit/edit';
 import { ConnectModal } from '../connect-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useProfileOrganizationShared } from '../profile-organization.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import clsx from 'clsx';
 
 export const Desktop = (): JSX.Element => {

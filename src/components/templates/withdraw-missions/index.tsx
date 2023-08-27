@@ -1,7 +1,7 @@
 import { Button } from '@atoms/button/button';
 import Card from '@atoms/card';
-import { printWhen } from 'src/core/utils';
-import { getFlooredFixed } from 'src/core/numbers';
+import { printWhen } from '@core/utils';
+import { getFlooredFixed } from '@core/numbers';
 import { WithdrawMissionsProps } from './withdraw-missions.types';
 import css from './withdraw-missions.module.scss';
 

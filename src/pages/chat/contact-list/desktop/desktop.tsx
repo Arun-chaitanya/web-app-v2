@@ -6,7 +6,7 @@ import Card from '@atoms/card';
 import { CreateChatModal } from '../create-chat-modal';
 import { useContactListShared } from '../contact-list.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = (): JSX.Element => {
   const navigate = useNavigate();

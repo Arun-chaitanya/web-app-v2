@@ -5,10 +5,10 @@ import { Typography } from '@atoms/typography/typography';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
-import { translatePaymentTerms } from 'src/constants/PROJECT_PAYMENT_SCHEME';
-import { translatePaymentType } from 'src/constants/PROJECT_PAYMENT_TYPE';
-import { translateRemotePreferences } from 'src/constants/PROJECT_REMOTE_PREFERENCE';
-import { printWhen } from 'src/core/utils';
+import { translatePaymentTerms } from '@constants/PROJECT_PAYMENT_SCHEME';
+import { translatePaymentType } from '@constants/PROJECT_PAYMENT_TYPE';
+import { translateRemotePreferences } from '@constants/PROJECT_REMOTE_PREFERENCE';
+import { printWhen } from '@core/utils';
 import { useCompleteMissionShared } from '../complete-mission.shared';
 import css from './mobile.module.scss';
 

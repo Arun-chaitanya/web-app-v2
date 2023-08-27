@@ -1,6 +1,6 @@
 import { CSSProperties, SyntheticEvent, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useScrollLock } from 'src/hooks/use-scroll-lock';
+import { useScrollLock } from '@hooks/use-scroll-lock';
 import css from './card-slide-up.module.scss';
 import { CardSlideProps } from './card-slide-up.types';
 

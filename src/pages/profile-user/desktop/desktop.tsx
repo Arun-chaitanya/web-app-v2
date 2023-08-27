@@ -7,14 +7,14 @@ import { Button } from '@atoms/button/button';
 import { ImpactBadge } from '@atoms/impact-badge/impact-badge';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import Card from '@atoms/card';
-import { ConnectModal } from 'src/pages/profile-organization/connect-modal';
+import { ConnectModal } from '@pages/profile-organization/connect-modal';
 import { BackLink } from '@molecules/back-link';
 import { Edit } from './edit/edit';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { badgesList } from '../profile-user.services';
 import { useProfileUserShared } from '../profile-user.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import clsx from 'clsx';
 
 export const Desktop = (): JSX.Element => {

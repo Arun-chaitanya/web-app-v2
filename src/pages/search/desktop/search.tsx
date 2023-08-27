@@ -2,7 +2,7 @@ import css from './search.module.scss';
 import { DropdownBtn } from '@atoms/dropdown-btn/dropdown-btn';
 import { JobList } from '@organisms/job-list/job-list';
 import { PeopleList } from '../components/people-list/people-list';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useSearchShared } from '../search.shared';
 import { SocialCausesFilter } from './filter-bar/social-causes-filter/social-causes-filter';
 import { SkillsFilter } from './filter-bar/skills-filter/skills-filter';

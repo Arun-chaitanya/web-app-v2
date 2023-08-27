@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import store from 'src/store/store';
+import store from '@store/store';
 import { WebModal } from '@templates/web-modal';
 import { Accordion } from '@atoms/accordion/accordion';
 import { AlertModal } from '@organisms/alert-modal';
-import { resetCreatedQuestion } from 'src/store/reducers/createQuestionWizard.reducer';
-import { resetCreatePostWizard } from 'src/store/reducers/createPostWizard.reducer';
+import { resetCreatedQuestion } from '@store/reducers/createQuestionWizard.reducer';
+import { resetCreatePostWizard } from '@store/reducers/createPostWizard.reducer';
 import { CreatedModalProps } from './created-modal.types';
 import { useCreatedShared } from '../created.shared';
 import css from './created-modal.module.scss';

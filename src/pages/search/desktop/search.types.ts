@@ -1,4 +1,4 @@
-import { Pagination } from 'src/core/types';
+import { Pagination } from '@core/types';
 
 export type SearchProps = {
   title: string;

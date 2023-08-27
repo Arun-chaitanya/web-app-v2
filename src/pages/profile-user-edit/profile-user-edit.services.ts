@@ -1,10 +1,10 @@
 import { Dispatch, SetStateAction } from 'react';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
-import { citiesToCategories } from 'src/core/adaptors';
+import { citiesToCategories } from '@core/adaptors';
 import { getCityList } from '../job-create/info/info.services';
 import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
-import { endpoint } from 'src/core/endpoints';
-import { PostMediaUploadResp } from 'src/core/endpoints/index.types';
+import { endpoint } from '@core/endpoints';
+import { PostMediaUploadResp } from '@core/endpoints/index.types';
 
 export function cityDispatcher(setCities: Dispatch<SetStateAction<DropdownItem[]>>) {
   return (countryCode: string) => {

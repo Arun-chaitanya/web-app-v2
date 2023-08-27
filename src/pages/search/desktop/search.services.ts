@@ -1,6 +1,6 @@
-import { post } from 'src/core/http';
+import { post } from '@core/http';
 import { PayloadModel } from './search.types';
-import { SearchReq } from 'src/core/types';
+import { SearchReq } from '@core/types';
 
 export async function search(payload: PayloadModel): Promise<SearchReq> {
   let body = {

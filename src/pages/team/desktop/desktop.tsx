@@ -6,10 +6,10 @@ import { CardMenu } from '@molecules/card-menu/card-menu';
 import { Avatar } from '@atoms/avatar/avatar';
 import { AddMemberModal } from '../add-member-modal';
 import { SureModal } from '@templates/sure-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useTeamShared } from '../team.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

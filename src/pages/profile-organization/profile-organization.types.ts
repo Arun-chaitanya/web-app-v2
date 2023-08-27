@@ -1,4 +1,4 @@
-import { ConnectionItem, Pagination } from 'src/core/types';
+import { ConnectionItem, Pagination } from '@core/types';
 
 export type ProfileReq = {
   id: string;

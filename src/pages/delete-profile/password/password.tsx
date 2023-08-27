@@ -1,15 +1,15 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { IdentityReq } from '../../../core/types';
-import { RootState } from '../../../store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 import { Button } from '@atoms/button/button';
 import { Input } from '@atoms/input/input';
 import { deleteAccount, login } from '../delete-profile.service';
 import css from './password.module.scss';
-import { useForm } from '../../../core/form';
+import { useForm } from '@core/form';
 import { formModel } from './password.form';
-import { handleError } from '../../../core/http';
+import { handleError } from '@core/http';
 
 export const Password = () => {
   const navigate = useNavigate();

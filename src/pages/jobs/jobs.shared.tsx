@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { getJobList } from './jobs.services';
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import { IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 import { useSelector } from 'react-redux';
 
 export const useJobsShared = () => {

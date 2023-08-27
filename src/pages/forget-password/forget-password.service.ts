@@ -1,4 +1,4 @@
-import { get, post } from '../../core/http';
+import { get, post } from '@core/http';
 
 export async function forgetPassword(email: string) {
   const body = {

@@ -1,4 +1,4 @@
-import { post } from '../../core/http';
+import { post } from '@core/http';
 
 export async function login(email: string, password: string) {
   const body = {

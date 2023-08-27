@@ -1,21 +1,21 @@
 import { useNavigate } from '@tanstack/react-location';
 import { CSSProperties } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getIdentities } from '../../../core/api';
-import { IdentityReq } from '../../../core/types';
-import { setIdentityList } from '../../../store/reducers/identity.reducer';
-import { visibility } from '../../../store/reducers/menu.reducer';
-import { RootState } from '../../../store/store';
+import { getIdentities } from '@core/api';
+import { IdentityReq } from '@core/types';
+import { setIdentityList } from '@store/reducers/identity.reducer';
+import { visibility } from '@store/reducers/menu.reducer';
+import { RootState } from '@store/store';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Button } from '@atoms/button/button';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { setIdentityHeader, logout } from '../sidebar.service';
 import css from './mobile.module.scss';
 import { AccountsModel } from './mobile.types';
-import { printWhen } from '../../../core/utils';
-import { hapticsImpactLight } from '../../../core/haptic/haptic';
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
-import { useAuth } from 'src/hooks/use-auth';
+import { printWhen } from '@core/utils';
+import { hapticsImpactLight } from '@core/haptic/haptic';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
+import { useAuth } from '@hooks/use-auth';
 
 export const Mobile = () => {
   const dispatch = useDispatch();

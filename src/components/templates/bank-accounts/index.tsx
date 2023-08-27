@@ -1,6 +1,6 @@
 import Card from '@atoms/card';
 import { Button } from '@atoms/button/button';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { BankAccountsProps } from './bank-accounts.types';
 import css from './bank-accounts.module.scss';
 

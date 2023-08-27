@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import { RootState } from 'src/store/store';
-import { endpoint } from 'src/core/endpoints';
-import { IdentityReq, MemberIdentity, Pagination, UserType } from 'src/core/types';
+import { RootState } from '@store/store';
+import { endpoint } from '@core/endpoints';
+import { IdentityReq, MemberIdentity, Pagination, UserType } from '@core/types';
 import { Resolver } from './team.type';
 import { convertFollowingsToContactList } from './team.service';
 

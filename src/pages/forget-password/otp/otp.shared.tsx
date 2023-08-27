@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import { endpoint } from 'src/core/endpoints';
-import { handleError } from 'src/core/http';
-import { dialog } from 'src/core/dialog/dialog';
-import translate from 'src/translations';
-import { setAuthCookies } from 'src/pages/sign-in/sign-in.services';
+import { endpoint } from '@core/endpoints';
+import { handleError } from '@core/http';
+import { dialog } from '@core/dialog/dialog';
+import translate from '@translations';
+import { setAuthCookies } from '@pages/sign-in/sign-in.services';
 import { forgetPassword } from '../forget-password.service';
 
 export const useOtpShared = () => {

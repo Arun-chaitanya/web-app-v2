@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
 import { useAccount } from 'wagmi';
-import Dapp from 'src/dapp';
-import store from 'src/store/store';
-import { hideSpinner, showSpinner } from 'src/store/reducers/spinner.reducer';
-import { endpoint } from 'src/core/endpoints';
+import Dapp from '@dapp';
+import store from '@store/store';
+import { hideSpinner, showSpinner } from '@store/reducers/spinner.reducer';
+import { endpoint } from '@core/endpoints';
 import { confirmPayment, getCreditCardInfo } from './payment.service';
-import { dialog } from 'src/core/dialog/dialog';
-import { getMonthName } from 'src/core/time';
+import { dialog } from '@core/dialog/dialog';
+import { getMonthName } from '@core/time';
 import { Resolver } from './payment.types';
-import { CardInfoResp } from 'src/core/types';
-import { getFlooredFixed } from 'src/core/numbers';
+import { CardInfoResp } from '@core/types';
+import { getFlooredFixed } from '@core/numbers';
 
 export const usePaymentShared = () => {
   const { web3 } = Dapp.useWeb3();

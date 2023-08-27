@@ -1,4 +1,4 @@
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 import { Button } from '@atoms/button/button';
 import { ImpactBarLevel } from '@atoms/impact-bar-level/impact-bar-level';
 import css from './header.module.scss';

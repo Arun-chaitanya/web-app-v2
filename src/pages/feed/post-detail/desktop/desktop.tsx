@@ -7,11 +7,11 @@ import Card from '@atoms/card';
 import { SendBox } from '@molecules/send-box/send-box';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Comment } from '@molecules/comment/comment';
-import { socialCausesToCategory } from 'src/core/adaptors';
+import { socialCausesToCategory } from '@core/adaptors';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 import { usePostDetailShared } from '../post-detail.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = () => {
   const {

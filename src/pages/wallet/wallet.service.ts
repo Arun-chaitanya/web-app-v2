@@ -1,7 +1,7 @@
-import { required } from 'src/core/form';
-import { FormModel } from 'src/core/form/useForm/useForm.types';
-import { get } from 'src/core/http';
-import { MissionsResp } from 'src/core/types';
+import { required } from '@core/form';
+import { FormModel } from '@core/form/useForm/useForm.types';
+import { get } from '@core/http';
+import { MissionsResp } from '@core/types';
 
 export async function getMissionsList(payload: { page?: number }): Promise<MissionsResp> {
   return get('/user/missions', {

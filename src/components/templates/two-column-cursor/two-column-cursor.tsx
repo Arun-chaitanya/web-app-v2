@@ -1,4 +1,4 @@
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import css from './two-column-cursor.module.scss';
 import { TwoColumnCursorProps } from './two-column-cursor.types';
 import { CSSProperties } from 'react';

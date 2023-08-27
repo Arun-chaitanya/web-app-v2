@@ -1,9 +1,9 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 import { Resolver } from './job-detail.types';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 
 export const useJobDetailShared = () => {
   const navigate = useNavigate();

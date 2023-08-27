@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { JobCard } from '../components/molecules/job-card/job-card';
+import { JobCard } from '@molecules/job-card/job-card';
 
 export default {
   title: 'MOLECULES/JobCard',

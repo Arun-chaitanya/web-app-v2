@@ -1,4 +1,4 @@
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 import css from './header.module.scss';
 import { HeaderProps, HeaderLabel } from './header.types';
 

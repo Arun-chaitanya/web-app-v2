@@ -4,7 +4,7 @@ import { Steps } from '@atoms/steps/steps';
 import { Textarea } from '@atoms/textarea/textarea';
 import css from './desktop.module.scss';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
-import { required, useForm } from '../../../../core/form';
+import { required, useForm } from '@core/form';
 import clsx from 'clsx';
 
 export const Desktop = (): JSX.Element => {

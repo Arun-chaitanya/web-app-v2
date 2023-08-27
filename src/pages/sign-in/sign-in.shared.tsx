@@ -1,23 +1,23 @@
 import { useNavigate } from '@tanstack/react-location';
 import { formModel } from './sign-in.form';
 import { setAuthCookies } from './sign-in.services';
-import { LoginResp } from 'src/core/types';
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
-import store from 'src/store/store';
-import { endpoint } from 'src/core/endpoints';
-import { handleError } from 'src/core/http';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
+import { LoginResp } from '@core/types';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
+import store from '@store/store';
+import { endpoint } from '@core/endpoints';
+import { handleError } from '@core/http';
+import { getFormValues } from '@core/form/customValidators/formValues';
 import { LoginPayload } from './sign-in.types';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 import {
   addNotificationReceivedListener,
   getDeliveredNotifications,
   getToken,
   requestPermissions,
-} from '../../core/pushNotification';
+} from '@core/pushNotification';
 import { Capacitor } from '@capacitor/core';
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
 
 const addListeners = () => {
   addNotificationReceivedListener().then((n) => console.log('addNotificationReceivedListener: ', n));

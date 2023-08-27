@@ -4,10 +4,10 @@ import { CategoriesClickable } from '@atoms/categories-clickable/categories-clic
 import Card from '@atoms/card';
 import { Avatar } from '@atoms/avatar/avatar';
 import { TextClickableURLs } from '@atoms/text-clickable-urls';
-import { RootState } from 'src/store/store';
-import { printWhen } from 'src/core/utils';
+import { RootState } from '@store/store';
+import { printWhen } from '@core/utils';
 import { getFeedList, submitPost, uploadImage } from '../mobile/mobile.service';
-import { IdentityReq } from 'src/core/types';
+import { IdentityReq } from '@core/types';
 import { ModalReviewProps } from './modal-review.types';
 import css from './modal-review.module.scss';
 

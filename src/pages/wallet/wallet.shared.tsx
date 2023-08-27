@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
-import { dialog } from 'src/core/dialog/dialog';
-import { useForm } from 'src/core/form';
-import { endpoint } from 'src/core/endpoints';
+import { dialog } from '@core/dialog/dialog';
+import { useForm } from '@core/form';
+import { endpoint } from '@core/endpoints';
 import { formModel, getMissionsList, getStripeLink } from './wallet.service';
 import { Resolver, RespPayout } from './wallet.types';
 

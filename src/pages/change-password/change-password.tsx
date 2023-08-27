@@ -2,7 +2,7 @@ import css from './change-password.module.scss';
 import { Button } from '@atoms/button/button';
 import { Header } from '@atoms/header/header';
 import { Input } from '@atoms/input/input';
-import { BottomStatic } from '../../components/templates/bottom-static/bottom-static';
+import { BottomStatic } from '@templates/bottom-static/bottom-static';
 import { useChangePasswordShared } from './change-password.shared';
 
 export const ChangePassword = (): JSX.Element => {

@@ -1,4 +1,4 @@
-import { endpoint } from 'src/core/endpoints';
+import { endpoint } from '@core/endpoints';
 import { getBadges, getImpactPoints } from './achievements.services';
 
 export async function AchievementsPageLoader() {

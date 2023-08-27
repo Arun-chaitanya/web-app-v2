@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 import { like, unlike } from '../mobile/mobile.service';
 import { addComment, getComments, likeComment, removeCommentLike } from './post-detail.service';
 import { Feed } from '@organisms/feed-list/feed-list.types';
-import { IdentityReq, Pagination } from 'src/core/types';
+import { IdentityReq, Pagination } from '@core/types';
 import { CommentModel } from './post-detail.types';
-import { endpoint } from 'src/core/endpoints';
-import { dialog } from 'src/core/dialog/dialog';
-import { RootState } from 'src/store/store';
+import { endpoint } from '@core/endpoints';
+import { dialog } from '@core/dialog/dialog';
+import { RootState } from '@store/store';
 
 export const usePostDetailShared = () => {
   const { post, comments } = useMatch().ownData as {

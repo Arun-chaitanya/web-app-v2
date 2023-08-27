@@ -4,8 +4,8 @@ import { WebModal } from '@templates/web-modal';
 import { Search } from '@atoms/search/search';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { SkillsModalProps } from './skills-modal.types';
-import { setPostSkills } from 'src/store/reducers/createPostWizard.reducer';
-import { InfoModal } from 'src/pages/job-create/info/info-modal';
+import { setPostSkills } from '@store/reducers/createPostWizard.reducer';
+import { InfoModal } from '@pages/job-create/info/info-modal';
 import { useSkillsShared } from '../skills.shared';
 import css from './skills-modal.module.scss';
 

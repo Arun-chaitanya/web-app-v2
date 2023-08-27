@@ -1,5 +1,5 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {JobHistoryList} from '../components/organisms/job-history-list/job-history-list';
+import {JobHistoryList} from '@organisms/job-history-list/job-history-list';
 
 export default {
   title: 'MOLECULES/JobHistoryItem',

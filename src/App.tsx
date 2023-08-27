@@ -1,20 +1,20 @@
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import { Outlet, Router } from '@tanstack/react-location';
-import { routes } from './core/routes/routes';
-import store, { RootState } from './store/store';
+import { routes } from '@core/routes/routes';
+import store, { RootState } from '@store/store';
 import { Spinner } from '@atoms/spinner/spinner';
-import { Sidebar } from './pages/sidebar/sidebar';
-import { location } from './core/routes/config.routes';
-import { DeepLinks } from './core/deepLinks';
-import { nonPermanentStorage } from './core/storage/non-permanent';
-import { endpoint } from './core/endpoints';
-import { setAuthCookies } from './pages/sign-in/sign-in.services';
-import { PostRefreshResp } from './core/endpoints/index.types';
-import { closeModal } from './store/reducers/modal.reducer';
-import { Modal } from './components/templates/modal/modal';
+import { Sidebar } from '@pages/sidebar/sidebar';
+import { location } from '@core/routes/config.routes';
+import { DeepLinks } from '@core/deepLinks';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
+import { endpoint } from '@core/endpoints';
+import { setAuthCookies } from '@pages/sign-in/sign-in.services';
+import { PostRefreshResp } from '@core/endpoints/index.types';
+import { closeModal } from '@store/reducers/modal.reducer';
+import { Modal } from '@templates/modal/modal';
 import { useEffect } from 'react';
-import { getIdentities } from './core/api';
-import { setIdentityList } from './store/reducers/identity.reducer';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
 
 async function fetchNewAuth(
   refresh_token: Awaited<ReturnType<typeof nonPermanentStorage.get>>

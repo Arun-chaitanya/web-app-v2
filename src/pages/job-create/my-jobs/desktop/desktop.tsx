@@ -7,13 +7,13 @@ import { Accordion } from '@atoms/accordion/accordion';
 import { JobCardList } from '@organisms/job-card-list/job-card-list';
 import { CardMenu } from '@molecules/card-menu/card-menu';
 import { ProfileCard } from '@templates/profile-card';
-import { SocialCausesModal } from 'src/pages/job-create/social-causes/social-causes-modal';
-import { printWhen } from 'src/core/utils';
+import { SocialCausesModal } from '@pages/job-create/social-causes/social-causes-modal';
+import { printWhen } from '@core/utils';
 import { getActiveJobs, jobListToJobCardListAdaptor } from '../my-jobs.services';
 import { useMyJobShared } from '../my-job.shared';
 import { MyJobs } from '../my-jobs.types';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import { BackLink } from '@molecules/back-link';
 
 export const Desktop: React.FC = () => {

@@ -3,7 +3,7 @@ import { TierBadge } from '@atoms/tier-badge/tier-badge';
 import { ImpactBarSimple } from '@atoms/impact-bar-simple/impact-bar-simple';
 import { BadgeDetailSlideProps } from './badge-detail-slide.types';
 import { ImpactCategoryItem } from '@molecules/impact-category-item/impact-category-item';
-import { BADGES } from 'src/constants/constants';
+import { BADGES } from '@constants/constants';
 import { ImpactBadge } from '@atoms/impact-badge/impact-badge';
 
 export const BadgeDetailSlide = ({ id = 'NO_POVERTY' }: BadgeDetailSlideProps): JSX.Element => {

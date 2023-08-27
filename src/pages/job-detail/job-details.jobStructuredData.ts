@@ -1,4 +1,4 @@
-import { Job } from "src/components/organisms/job-list/job-list.types";
+import { Job } from "@organisms/job-list/job-list.types";
 
 export function getJobStructuresData(job:Job):string{
     const jobStructuredData=

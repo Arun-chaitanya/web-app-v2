@@ -2,7 +2,7 @@ import { Modal } from '@templates/modal/modal';
 import css from './social-causes-filter.module.scss';
 import { Search } from '@atoms/search/search';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { socialCausesToCategoryAdaptor } from 'src/core/adaptors';
+import { socialCausesToCategoryAdaptor } from '@core/adaptors';
 import { useState } from 'react';
 import { Button } from '@atoms/button/button';
 import { SocialCausesFilterProps } from './social-causes-filter.types';

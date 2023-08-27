@@ -6,12 +6,12 @@ import { Divider } from '@templates/divider/divider';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { Button } from '@atoms/button/button';
 import { ImpactBadge } from '@atoms/impact-badge/impact-badge';
-import { ConnectModal } from 'src/pages/profile-organization/connect-modal';
+import { ConnectModal } from '@pages/profile-organization/connect-modal';
 import { badgesList, showActions } from '../profile-user.services';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useProfileUserShared } from '../profile-user.shared';
 import css from './mobile.module.scss';
-import { AuthGuard } from 'src/core/auth-guard/auth-guard';
+import { AuthGuard } from '@core/auth-guard/auth-guard';
 
 export const Mobile = (): JSX.Element => {
   const navigate = useNavigate();

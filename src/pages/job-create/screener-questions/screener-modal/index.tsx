@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import store from 'src/store/store';
+import store from '@store/store';
 import { WebModal } from '@templates/web-modal';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { Textarea } from '@atoms/textarea/textarea';
@@ -16,12 +16,12 @@ import {
   setQuestionProjectIds,
   setQuestionType,
   setRequiredQuestion,
-} from 'src/store/reducers/createQuestionWizard.reducer';
-import { resetCreatePostWizard } from 'src/store/reducers/createPostWizard.reducer';
-import { printWhen } from 'src/core/utils';
+} from '@store/reducers/createQuestionWizard.reducer';
+import { resetCreatePostWizard } from '@store/reducers/createPostWizard.reducer';
+import { printWhen } from '@core/utils';
 import { ButtonProps } from '@atoms/button/button.types';
 import { ScreenerModalProps } from './screener-modal.types';
-import { CreateQuestionPayload } from 'src/core/types';
+import { CreateQuestionPayload } from '@core/types';
 import { QUESTION_TYPE, createQuestion } from '../screener-questions.service';
 import { useScreenerQuestionsShared } from '../screener-questions.shared';
 import css from './screener-modal.module.scss';

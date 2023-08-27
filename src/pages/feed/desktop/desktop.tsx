@@ -11,11 +11,11 @@ import { ModalCreate } from '../modal-create';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 import { useFeedShared } from '../feed.shared';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { IdentityReq } from 'src/core/types';
-import { printWhen } from 'src/core/utils';
+import { RootState } from '@store/store';
+import { IdentityReq } from '@core/types';
+import { printWhen } from '@core/utils';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = () => {
   const navigate = useNavigate();

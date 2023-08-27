@@ -1,8 +1,8 @@
 import css from './job-card-list.module.scss';
-import { JobCard } from '../../molecules/job-card/job-card';
+import { JobCard } from '@molecules/job-card/job-card';
 import { JobCardListProps } from './job-card-list.types';
 import { useState } from 'react';
-import { printWhen } from '../../../core/utils';
+import { printWhen } from '@core/utils';
 import { JobCardProps } from '@molecules/job-card/job-card.types';
 
 export const JobCardList = (props: JobCardListProps): JSX.Element => {

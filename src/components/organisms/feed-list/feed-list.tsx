@@ -1,9 +1,9 @@
-import { FeedItem } from '../../molecules/feed-item/feed-item';
+import { FeedItem } from '@molecules/feed-item/feed-item';
 import { Feed, FeedListProps } from './feed-list.types';
 import css from './feed-list.module.scss';
-import { socialCausesToCategory } from '../../../core/adaptors';
+import { socialCausesToCategory } from '@core/adaptors';
 import { useNavigate } from '@tanstack/react-location';
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 
 export const FeedList = ({ data, onMorePageClick, onLike, onRemoveLike, showSeeMore, onMoreClick }: FeedListProps) => {
   const navigate = useNavigate();

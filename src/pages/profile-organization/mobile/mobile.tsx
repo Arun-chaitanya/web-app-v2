@@ -6,7 +6,7 @@ import { Divider } from '@templates/divider/divider';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { Button } from '@atoms/button/button';
 import { ConnectModal } from '../connect-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { showActions } from '../profile-organization.services';
 import { useProfileOrganizationShared } from '../profile-organization.shared';
 import css from './mobile.module.scss';

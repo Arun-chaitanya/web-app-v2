@@ -1,7 +1,7 @@
 import { Button } from '@atoms/button/button';
 import Card from '@atoms/card';
 import { Modal } from '@templates/modal/modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { AlertModalProps } from './alert-modal.types';
 import css from './alert-modal.module.scss';
 import clsx from 'clsx';

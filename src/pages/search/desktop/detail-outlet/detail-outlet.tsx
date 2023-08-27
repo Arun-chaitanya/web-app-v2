@@ -1,15 +1,15 @@
 import { CSSProperties, useMemo, useState } from 'react';
-import { endpoint } from 'src/core/endpoints';
-import { JobDetailCard } from 'src/pages/job-detail/components/job-detail-card/job-detail-card';
-import { getScreeningQuestions } from 'src/pages/job-offer-reject/job-offer-reject.services';
+import { endpoint } from '@core/endpoints';
+import { JobDetailCard } from '@pages/job-detail/components/job-detail-card/job-detail-card';
+import { getScreeningQuestions } from '@pages/job-offer-reject/job-offer-reject.services';
 import { DetailOutletProps } from './detail-outlet.types';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 import { Job } from '@organisms/job-list/job-list.types';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { IdentityReq } from 'src/core/types';
+import { RootState } from '@store/store';
+import { IdentityReq } from '@core/types';
 import { UserProfileCard } from '../../components/user-profile-card/user-profile-card';
-import { getUserDetail } from 'src/pages/profile-user/profile-user.services';
+import { getUserDetail } from '@pages/profile-user/profile-user.services';
 
 export function DetailOutlet(props: DetailOutletProps): JSX.Element {
   const [loading, setLoading] = useState(false);

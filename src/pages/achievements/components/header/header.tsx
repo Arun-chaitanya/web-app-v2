@@ -1,4 +1,4 @@
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { Button } from '@atoms/button/button';
 import { ImpactBarLevel } from '@atoms/impact-bar-level/impact-bar-level';
 import css from './header.module.scss';

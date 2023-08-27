@@ -3,22 +3,22 @@ import css from './edit.module.scss';
 import { Modal } from '@templates/modal/modal';
 import { Textarea } from '@atoms/textarea/textarea';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
-import { COUNTRY_CODES } from 'src/constants/COUNTRY_CODE';
+import { COUNTRIES } from '@constants/COUNTRIES';
+import { COUNTRY_CODES } from '@constants/COUNTRY_CODE';
 import { Category } from '@molecules/category/category';
-import { socialCausesToCategoryAdaptor } from 'src/core/adaptors';
+import { socialCausesToCategoryAdaptor } from '@core/adaptors';
 import { useEffect, useRef, useState } from 'react';
 import { Input } from '@atoms/input/input';
 import { EditProps } from './edit.types';
-import { useProfileOrganizationEditShared } from 'src/pages/profile-organization-edit/profile-organization-edit.shared';
+import { useProfileOrganizationEditShared } from '@pages/profile-organization-edit/profile-organization-edit.shared';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
-import { endpoint } from 'src/core/endpoints';
+import { getFormValues } from '@core/form/customValidators/formValues';
+import { endpoint } from '@core/endpoints';
 import { Popover } from '@atoms/popover/popover';
 import { PopoverProps } from '@atoms/popover/popover.types';
-import { removedEmptyProps } from 'src/core/utils';
-import { ORGANIZATION_TYPE } from 'src/constants/ORGANIZATION_TYPE';
-import { dialog } from 'src/core/dialog/dialog';
+import { removedEmptyProps } from '@core/utils';
+import { ORGANIZATION_TYPE } from '@constants/ORGANIZATION_TYPE';
+import { dialog } from '@core/dialog/dialog';
 
 export const EditOrganization = (props: EditProps): JSX.Element => {
   const {

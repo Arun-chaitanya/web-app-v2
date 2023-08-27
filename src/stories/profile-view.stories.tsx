@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ProfileView } from '../components/molecules/profile-view/profile-view';
+import { ProfileView } from '@molecules/profile-view/profile-view';
 
 export default {
   title: 'MOLECULES/ProfileView',

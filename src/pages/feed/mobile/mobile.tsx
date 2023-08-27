@@ -5,15 +5,15 @@ import Card from '@atoms/card';
 import { FeedList } from '@organisms/feed-list/feed-list';
 import { DialogCreate } from '../dialog-create/dialog-create';
 import { Search } from '@atoms/search/search';
-import { IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
-import { visibility } from 'src/store/reducers/menu.reducer';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
+import { visibility } from '@store/reducers/menu.reducer';
 import { useNavigate } from '@tanstack/react-location';
 import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 import { useFeedShared } from '../feed.shared';
 import css from './mobile.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Mobile = () => {
   const navigate = useNavigate();

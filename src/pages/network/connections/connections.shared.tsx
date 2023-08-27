@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { endpoint } from 'src/core/endpoints';
-import { dialog } from 'src/core/dialog/dialog';
-import { IdentityReq, UserType } from 'src/core/types';
+import { RootState } from '@store/store';
+import { endpoint } from '@core/endpoints';
+import { dialog } from '@core/dialog/dialog';
+import { IdentityReq, UserType } from '@core/types';
 import { Resolver } from './connections.types';
 import { getConnections } from './connections.service';
 
