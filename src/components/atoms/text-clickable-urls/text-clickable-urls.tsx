@@ -1,7 +1,7 @@
-import { TextClickableUrlsProps } from './text-clickable-urls.types';
 import css from './text-clickable-urls.module.scss';
+import { TextClickableUrlsProps } from './text-clickable-urls.types';
 
-export const TextClickableURLs: React.FC<TextClickableUrlsProps> = ({ text }) => {
+const TextClickableURLs: React.FC<TextClickableUrlsProps> = ({ text }) => {
   const detectURLs = (text: string) => {
     const includesProtocols = /^(?:(?:https?|fttps?):\/\/)/g;
     const urlRegex = /^(?:(?:https?|fttps?):\/\/)?(?:www\.)?[a-zA-Z0-9]+\.[a-zA-Z]{2,}(?:\/[\w-]+)*\/?$/g;
@@ -28,3 +28,5 @@ export const TextClickableURLs: React.FC<TextClickableUrlsProps> = ({ text }) =>
   };
   return <>{detectURLs(text)}</>;
 };
+
+export default TextClickableURLs;

@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
-import { printWhen } from '@core/utils';
-import { TextClickableURLs } from '../text-clickable-urls';
-import { ExpandableTextProps } from './expandable-text.types';
-import { convertMarkdownToJSX } from '@core/convert-md-to-jsx';
-import css from './expandable-text.module.scss';
-import { removeIncompleteOpeningTags } from '@core/remove-incomplete-tags';
 
-export const ExpandableText: React.FC<ExpandableTextProps> = ({
+import { convertMarkdownToJSX } from '@core/convert-md-to-jsx';
+import { removeIncompleteOpeningTags } from '@core/remove-incomplete-tags';
+import { printWhen } from '@core/utils';
+
+import TextClickableURLs from '../text-clickable-urls';
+import css from './expandable-text.module.scss';
+import { ExpandableTextProps } from './expandable-text.types';
+
+const ExpandableText: React.FC<ExpandableTextProps> = ({
   text,
   expectedLength = 200,
   clickableUrls = true,
@@ -50,3 +52,5 @@ export const ExpandableText: React.FC<ExpandableTextProps> = ({
     </div>
   );
 };
+
+export default ExpandableText;

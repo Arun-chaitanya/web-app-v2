@@ -1,19 +1,19 @@
 import css from './desktop.module.scss';
-import { Input } from '@atoms/input/input';
-import { Textarea } from '@atoms/textarea/textarea';
+import Input from '@atoms/input';
+import Textarea from '@atoms/textarea';
 import { Divider } from '@templates/divider/divider';
 import Card from '@atoms/card';
-import { Steps } from '@atoms/steps/steps';
-import { Button } from '@atoms/button/button';
+import Steps from '@atoms/steps';
+import Button from '@atoms/button';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import { useState } from 'react';
-import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown-v2';
 import { formModel } from '../profile.form';
 import { getCityList } from '@pages/job-create/info/info.services';
 import { citiesToCategories } from '@core/adaptors';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Dropdown from '@atoms/dropdown-v2';
 import { COUNTRIES } from '@constants/COUNTRIES';
-import { Checkbox } from '@atoms/checkbox/checkbox';
+import Checkbox from '@atoms/checkbox';
 import { formIsInvalid } from '../profile.services';
 import clsx from 'clsx';
 

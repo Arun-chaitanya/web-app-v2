@@ -5,7 +5,7 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import { WithdrawMissions } from '@templates/withdraw-missions';
 import { AlertModal } from '@organisms/alert-modal';
 import { BankAccounts } from '@templates/bank-accounts';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Dropdown from '@atoms/dropdown-v2';
 import Card from '@atoms/card';
 import { ProfileCard } from '@templates/profile-card';
 import { CardMenu } from '@molecules/card-menu/card-menu';

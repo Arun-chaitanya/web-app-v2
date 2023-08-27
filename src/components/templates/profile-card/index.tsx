@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@store/store';
 import { IdentityReq } from '@core/types';
 import Card from '@atoms/card';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import css from './profile-card.module.scss';
 
 export const ProfileCard: React.FC = () => {

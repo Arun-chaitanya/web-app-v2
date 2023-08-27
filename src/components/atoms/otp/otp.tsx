@@ -1,8 +1,9 @@
 import { useRef, KeyboardEvent, MutableRefObject, useCallback, useEffect } from 'react';
+
 import css from './otp.module.scss';
 import { OtpProps } from './otp.types';
 
-export const Otp = (props: OtpProps): JSX.Element => {
+const Otp = (props: OtpProps): JSX.Element => {
   const { length, disabled = false, value, onChange } = props;
   const boxesRef = useRef<HTMLInputElement[]>([]);
 
@@ -78,3 +79,5 @@ export const Otp = (props: OtpProps): JSX.Element => {
     </div>
   );
 };
+
+export default Otp;

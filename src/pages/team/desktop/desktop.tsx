@@ -3,7 +3,7 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import Card from '@atoms/card';
 import { ProfileCard } from '@templates/profile-card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { AddMemberModal } from '../add-member-modal';
 import { SureModal } from '@templates/sure-modal';
 import { printWhen } from '@core/utils';

@@ -1,6 +1,6 @@
 import { Modal } from '@templates/modal/modal';
-import { Button } from '@atoms/button/button';
-import { Input } from '@atoms/input/input';
+import Button from '@atoms/button';
+import Input from '@atoms/input';
 import { printWhen } from '@core/utils';
 import { endpoint } from '@core/endpoints';
 import { AddCardModalProps } from './add-card-modal.types';

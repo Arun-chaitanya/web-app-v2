@@ -1,7 +1,7 @@
 import css from './checkbox.module.scss';
 import { CheckboxProps } from './checkbox.types';
 
-export const Checkbox = ({ checked, id, name, label, onChange, disabled, defaultChecked, register }: CheckboxProps) => {
+const Checkbox = ({ checked, id, name, label, onChange, disabled, defaultChecked, register }: CheckboxProps) => {
   return (
     <div className={css.container}>
       <input
@@ -18,3 +18,5 @@ export const Checkbox = ({ checked, id, name, label, onChange, disabled, default
     </div>
   );
 };
+
+export default Checkbox;

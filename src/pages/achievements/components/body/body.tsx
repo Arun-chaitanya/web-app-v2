@@ -1,6 +1,6 @@
 import css from './body.module.scss';
 import { Tab } from '@atoms/tabs/tabs.types';
-import { Tabs } from '@atoms/tabs/tabs';
+import Tabs from '@atoms/tabs';
 import { BodyProps } from './body.types';
 import { ImpactCategoryList } from '@organisms/impact-category-list/impact-category-list';
 import { JobHistoryList } from '@organisms/job-history-list/job-history-list';

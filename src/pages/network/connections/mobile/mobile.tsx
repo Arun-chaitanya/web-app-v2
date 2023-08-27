@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import { Header } from '@atoms/header/header';
-import { Tabs } from '@atoms/tabs/tabs';
-import { Avatar } from '@atoms/avatar/avatar';
-import { ExpandableText } from '@atoms/expandable-text';
-import { Accordion } from '@atoms/accordion/accordion';
+import Header from '@atoms/header';
+import Tabs from '@atoms/tabs';
+import Avatar from '@atoms/avatar';
+import ExpandableText from '@atoms/expandable-text';
+import Accordion from '@atoms/accordion';
 import { CardSlideUp } from '@templates/card-slide-up/card-slide-up';
 import { printWhen } from '@core/utils';
 import { connectionListAdaptor, receivedRequestsAdaptor, sentRequestsAdaptor } from '../connections.service';

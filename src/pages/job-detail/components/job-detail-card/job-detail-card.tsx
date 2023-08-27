@@ -1,12 +1,12 @@
-import { Categories } from '@atoms/categories/categories';
+import Categories from '@atoms/categories';
 import css from './job-detail-card.module.scss';
 import Card from '@atoms/card';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
 import { printWhen } from '@core/utils';
-import { ExpandableText } from '@atoms/expandable-text';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Button } from '@atoms/button/button';
+import ExpandableText from '@atoms/expandable-text';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Button from '@atoms/button';
 import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
 import { getCategories } from '../../job-detail.services';
 import { JobDetailCardProps } from './job-detail-card.types';

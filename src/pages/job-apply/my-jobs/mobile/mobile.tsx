@@ -1,6 +1,6 @@
-import { Accordion } from '@atoms/accordion/accordion';
-import { Header } from '@atoms/header/header';
-import { Tabs } from '@atoms/tabs/tabs';
+import Accordion from '@atoms/accordion';
+import Header from '@atoms/header';
+import Tabs from '@atoms/tabs';
 import { useNavigate } from '@tanstack/react-location';
 import { JobCardList } from '@organisms/job-card-list/job-card-list';
 import { useMyJobShared } from '../my-jobs.shared';

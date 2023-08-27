@@ -1,8 +1,8 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useDispatch } from 'react-redux';
-import { Button } from '@atoms/button/button';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Search } from '@atoms/search/search';
+import Button from '@atoms/button';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Search from '@atoms/search';
 import { useSkillsShared } from '../skills.shared';
 import css from './mobile.module.scss';
 import { createFormInitState, jobEditRequest } from '../../info/info.services';

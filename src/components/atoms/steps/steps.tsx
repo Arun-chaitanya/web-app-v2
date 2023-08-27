@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
+
 import css from './steps.module.scss';
 import { StepsProps } from './steps.types';
 
-export const Steps = (props: StepsProps): JSX.Element => {
+const Steps = (props: StepsProps): JSX.Element => {
   const { length, current, autoPlay, onStepClick, clickable = true, ...rest } = props;
   const steps: number[] = Array.from(Array(length).keys());
   const [step, setStep] = useState(current);
@@ -13,7 +14,7 @@ export const Steps = (props: StepsProps): JSX.Element => {
 
   function click(i: number) {
     return () => {
-      if (clickable === true) {
+      if (clickable) {
         setStep(i + 1);
         onStepClick?.(i + 1);
       }
@@ -37,3 +38,5 @@ export const Steps = (props: StepsProps): JSX.Element => {
     </div>
   );
 };
+
+export default Steps;

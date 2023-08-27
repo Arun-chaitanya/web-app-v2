@@ -1,8 +1,8 @@
 import css from './desktop.module.scss';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
-import { Steps } from '@atoms/steps/steps';
-import { TypeSelector } from '@atoms/type-selector/type-selector';
+import Steps from '@atoms/steps';
+import TypeSelector from '@atoms/type-selector';
 import { ORGANIZATION_TYPE } from '@constants/ORGANIZATION_TYPE';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import clsx from 'clsx';

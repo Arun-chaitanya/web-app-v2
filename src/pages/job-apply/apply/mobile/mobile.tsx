@@ -1,12 +1,12 @@
-import { Textarea } from '@atoms/textarea/textarea';
+import Textarea from '@atoms/textarea';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { resumeInitialState } from '../apply.services';
 import { Divider } from '@templates/divider/divider';
-import { Input } from '@atoms/input/input';
-import { Button } from '@atoms/button/button';
-import { Checkbox } from '@atoms/checkbox/checkbox';
-import { Header } from '@atoms/header/header';
-import { ExpandableText } from '@atoms/expandable-text';
+import Input from '@atoms/input';
+import Button from '@atoms/button';
+import Checkbox from '@atoms/checkbox';
+import Header from '@atoms/header';
+import ExpandableText from '@atoms/expandable-text';
 import { printWhen } from '@core/utils';
 import { useApplyShared } from '../apply.shared';
 import css from './mobile.module.scss';

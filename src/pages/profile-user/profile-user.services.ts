@@ -3,7 +3,7 @@ import { dialog } from '@core/dialog/dialog';
 import { endpoint } from '@core/endpoints';
 import { get, post } from '@core/http';
 import { BADGES } from '@constants/constants';
-import { ImpactBadgeProps } from '@atoms/impact-badge/impact-badge.types';
+import { ImpactBadgeProps } from '@atoms/impact-badge';
 
 export async function getUserDetail(username: string) {
   return get(`/user/by-username/${username}/profile`).then(({ data }) => data);

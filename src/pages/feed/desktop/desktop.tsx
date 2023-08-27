@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
 import { ProfileCard } from '@templates/profile-card';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import Card from '@atoms/card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
 import { FeedList } from '@organisms/feed-list/feed-list';

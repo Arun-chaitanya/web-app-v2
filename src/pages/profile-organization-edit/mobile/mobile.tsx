@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { Header } from '@atoms/header-v2/header';
-import { Input } from '@atoms/input/input';
+import Header from '@atoms/header-v2';
+import Input from '@atoms/input';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import css from './mobile.module.scss';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Textarea from '@atoms/textarea';
+import Dropdown from '@atoms/dropdown-v2';
 import { COUNTRIES } from '@constants/COUNTRIES';
-import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown-v2';
 import { COUNTRY_CODES } from '@constants/COUNTRY_CODE';
 import { Category } from '@molecules/category/category';
 import { useProfileOrganizationEditShared } from '../profile-organization-edit.shared';

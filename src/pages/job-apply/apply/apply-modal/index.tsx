@@ -1,11 +1,11 @@
 import { WebModal } from '@templates/web-modal';
-import { Textarea } from '@atoms/textarea/textarea';
+import Textarea from '@atoms/textarea';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
-import { Input } from '@atoms/input/input';
-import { Button } from '@atoms/button/button';
-import { Checkbox } from '@atoms/checkbox/checkbox';
-import { ExpandableText } from '@atoms/expandable-text';
+import Input from '@atoms/input';
+import Button from '@atoms/button';
+import Checkbox from '@atoms/checkbox';
+import ExpandableText from '@atoms/expandable-text';
 import { ModalProps } from '@templates/modal/modal.types';
 import { printWhen } from '@core/utils';
 import { resumeInitialState } from '../apply.services';

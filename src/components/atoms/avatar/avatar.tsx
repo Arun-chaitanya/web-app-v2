@@ -2,7 +2,7 @@ import { CSSProperties } from 'react';
 import css from './avatar.module.scss';
 import { AvatarProps } from './avatar.types';
 
-export const Avatar = (props: AvatarProps): JSX.Element => {
+const Avatar = (props: AvatarProps): JSX.Element => {
   const { size = '3rem', onClick, type = 'users', img, ...rest } = props;
 
   const images: Record<AvatarProps['type'], string> = {
@@ -25,3 +25,5 @@ export const Avatar = (props: AvatarProps): JSX.Element => {
     </div>
   );
 };
+
+export default Avatar;

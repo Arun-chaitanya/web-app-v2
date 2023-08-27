@@ -1,6 +1,6 @@
 import Card from '@atoms/card';
-import { Input } from '@atoms/input/input';
-import { Button } from '@atoms/button/button';
+import Input from '@atoms/input';
+import Button from '@atoms/button';
 import { usePasswordShared } from '../password.shared';
 import css from './desktop.module.scss';
 

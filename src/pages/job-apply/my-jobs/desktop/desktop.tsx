@@ -6,7 +6,7 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import Card from '@atoms/card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
 import { JobCardList } from '@organisms/job-card-list/job-card-list';
-import { Accordion } from '@atoms/accordion/accordion';
+import Accordion from '@atoms/accordion';
 import { ProfileCard } from '@templates/profile-card';
 import { printWhen } from '@core/utils';
 import { IdentityReq } from '@core/types';

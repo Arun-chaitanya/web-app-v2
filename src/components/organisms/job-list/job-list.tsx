@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import Card from '@atoms/card';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Categories } from '@atoms/categories/categories';
-import { ExpandableText } from '@atoms/expandable-text';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Categories from '@atoms/categories';
+import ExpandableText from '@atoms/expandable-text';
 import { socialCausesToCategory } from '@core/adaptors';
 import { toRelativeTime } from '@core/relative-time';
 import { printWhen } from '@core/utils';

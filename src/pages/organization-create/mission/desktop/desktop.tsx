@@ -1,7 +1,7 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
-import { Steps } from '@atoms/steps/steps';
-import { Textarea } from '@atoms/textarea/textarea';
+import Steps from '@atoms/steps';
+import Textarea from '@atoms/textarea';
 import css from './desktop.module.scss';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import { required, useForm } from '@core/form';

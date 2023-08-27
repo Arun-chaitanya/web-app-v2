@@ -4,7 +4,7 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import { JobDescrioptionCard } from '@templates/job-description-card';
 import { PaymentSummaryCard } from '@templates/payment-summary-card';
 import { PaymentMethods } from '@templates/payment-methods';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { BackLink } from '@molecules/back-link';
 import { AddCardModal } from '../credit-card/add-card-modal';
 import { printWhen } from '@core/utils';

@@ -1,5 +1,5 @@
-import { Avatar } from '@atoms/avatar/avatar';
-import { Search } from '@atoms/search/search';
+import Avatar from '@atoms/avatar';
+import Search from '@atoms/search';
 import Card from '@atoms/card';
 import { useNetworkShared } from '../network.shared';
 import css from './mobile.module.scss';

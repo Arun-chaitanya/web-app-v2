@@ -1,7 +1,7 @@
 import css from './mobile.module.scss';
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { useSearchShared } from '../search.shared';
-import { DropdownBtn } from '@atoms/dropdown-btn/dropdown-btn';
+import DropdownBtn from '@atoms/dropdown-btn';
 import { useNavigate } from '@tanstack/react-location';
 import { PayloadModel } from '../desktop/search.types';
 import { SocialCausesFilter } from '../desktop/filter-bar/social-causes-filter/social-causes-filter';

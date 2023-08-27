@@ -1,4 +1,4 @@
-import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown-v2';
 import { SKILLS } from '@constants/SKILLS';
 import { SOCIAL_CAUSES } from '@constants/SOCIAL_CAUSES';
 import { CategoriesResp, Cities } from './types';

@@ -13,7 +13,7 @@ import { SwitchAccountProps } from './switch-account.types';
 import { ChangePasswordModal } from '../change-password-modal/change-password-modal';
 import { nonPermanentStorage } from '@core/storage/non-permanent';
 import { printWhen } from '@core/utils';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { useAuth } from '@hooks/use-auth';
 
 let timer: NodeJS.Timeout;

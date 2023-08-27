@@ -1,5 +1,5 @@
-import { Button } from '@atoms/button/button';
-import { Input } from '@atoms/input/input';
+import Button from '@atoms/button';
+import Input from '@atoms/input';
 import { usePasswordShared } from '../password.shared';
 import css from './mobile.module.scss';
 

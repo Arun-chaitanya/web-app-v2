@@ -1,11 +1,12 @@
-import {CSSProperties} from 'react';
-import css from './level-badge.module.scss';
-import {LevelBadgeProps} from './level-badge.types';
+import { CSSProperties } from 'react';
 
-export const LevelBadge = ({level, size}: LevelBadgeProps): JSX.Element => {
+import css from './level-badge.module.scss';
+import { LevelBadgeProps } from './level-badge.types';
+
+const LevelBadge = ({ level, size }: LevelBadgeProps): JSX.Element => {
   const setSize: Record<LevelBadgeProps['size'], CSSProperties> = {
-    l: {width: '6rem', height: '6rem', fontSize: '2.5rem'},
-    s: {width: '3.625rem', height: '3.625rem', fontSize: '1.25rem'},
+    l: { width: '6rem', height: '6rem', fontSize: '2.5rem' },
+    s: { width: '3.625rem', height: '3.625rem', fontSize: '1.25rem' },
   };
 
   return (
@@ -14,3 +15,5 @@ export const LevelBadge = ({level, size}: LevelBadgeProps): JSX.Element => {
     </div>
   );
 };
+
+export default LevelBadge;

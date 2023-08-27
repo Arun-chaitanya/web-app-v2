@@ -15,7 +15,7 @@ import {
   setWebsite,
   setAgreement,
 } from '@store/reducers/createOrgWizard.reducer';
-import { DropdownItem } from '@atoms/dropdown/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown';
 import { getCityList } from '../../job-create/info/info.services';
 
 export function updateCityList(dispatcher: Dispatch<SetStateAction<DropdownItem[]>>) {

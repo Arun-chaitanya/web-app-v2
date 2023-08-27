@@ -1,7 +1,7 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import css from './change-password-modal.module.scss';
-import { Header } from '@atoms/header-v2/header';
-import { Input } from '@atoms/input/input';
+import Header from '@atoms/header-v2';
+import Input from '@atoms/input';
 import { Modal } from '@templates/modal/modal';
 import { printWhen } from '@core/utils';
 import { useChangePasswordShared } from '@pages/change-password/change-password.shared';

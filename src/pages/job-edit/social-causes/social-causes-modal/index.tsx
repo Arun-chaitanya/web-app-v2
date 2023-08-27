@@ -1,6 +1,6 @@
 import { WebModal } from '@templates/web-modal';
-import { Search } from '@atoms/search/search';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
+import Search from '@atoms/search';
+import CategoriesClickable from '@atoms/categories-clickable';
 import { SocialCausesModalProps } from './social-causes-modal.types';
 import { useSocialCausesShared } from '../social-causes.shared';
 import css from './social-causes-modal.module.scss';

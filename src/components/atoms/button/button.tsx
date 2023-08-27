@@ -1,9 +1,11 @@
-import css from './button.module.scss';
-import { ButtonProps } from './button.types';
-import { hapticsImpactLight } from '@core/haptic/haptic';
 import clsx from 'clsx';
 
-export function Button(props: ButtonProps): JSX.Element {
+import { hapticsImpactLight } from '@core/haptic/haptic';
+
+import css from './button.module.scss';
+import { ButtonProps } from './button.types';
+
+function Button(props: ButtonProps): JSX.Element {
   const { color, disabled, size, type, icon, className, children, weight, removeBorder, ...rest } = props;
 
   function onClick() {
@@ -40,3 +42,5 @@ Button.defaultProps = {
   type: 'button',
   weight: 'semi-bold',
 };
+
+export default Button;

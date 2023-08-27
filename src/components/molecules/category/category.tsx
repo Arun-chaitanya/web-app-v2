@@ -3,10 +3,10 @@ import css from './category.module.scss';
 import { CategoryItem, CategoryProps } from './category.types';
 import { useState } from 'react';
 import { printWhen } from '@core/utils';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
+import CategoriesClickable from '@atoms/categories-clickable';
 import { isTouchDevice } from '@core/device-type-detector';
 import { Modal } from '@templates/modal/modal';
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 
 function translate(selected: string | number, list: CategoryProps['list']): string {
   const translation = list.find((item) => item.value === selected);

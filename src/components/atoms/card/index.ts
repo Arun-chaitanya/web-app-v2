@@ -1,2 +1,2 @@
 export { default } from "./card";
-export * from "./card";
+export * from "./card.types";

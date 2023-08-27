@@ -1,5 +1,5 @@
 import css from './search.module.scss';
-import { DropdownBtn } from '@atoms/dropdown-btn/dropdown-btn';
+import DropdownBtn from '@atoms/dropdown-btn';
 import { JobList } from '@organisms/job-list/job-list';
 import { PeopleList } from '../components/people-list/people-list';
 import { printWhen } from '@core/utils';

@@ -1,12 +1,12 @@
-import css from './dropdown-btn.module.scss';
-import { DropdownBtnItem, DropdownBtnProps } from './dropdown-btn.types';
-import Popover from '@mui/material/Popover';
-import { MenuItem } from '@mui/material';
 import { CSSProperties, useState } from 'react';
 
-export default function BasicPopover() {}
+import { MenuItem } from '@mui/material';
+import Popover from '@mui/material/Popover';
 
-export const DropdownBtn = (props: DropdownBtnProps): JSX.Element => {
+import css from './dropdown-btn.module.scss';
+import { DropdownBtnItem, DropdownBtnProps } from './dropdown-btn.types';
+
+const DropdownBtn = (props: DropdownBtnProps): JSX.Element => {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
   const [value, setValue] = useState<string>(props.value);
 
@@ -59,3 +59,5 @@ export const DropdownBtn = (props: DropdownBtnProps): JSX.Element => {
     </div>
   );
 };
+
+export default DropdownBtn;

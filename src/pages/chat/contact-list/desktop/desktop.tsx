@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-location';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
-import { Fab } from '@atoms/fab/fab';
+import Fab from '@atoms/fab';
 import { ContactList } from '@organisms/contact-list/contact-list';
 import Card from '@atoms/card';
 import { CreateChatModal } from '../create-chat-modal';

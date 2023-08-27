@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
 import store from '@store/store';
 import { WebModal } from '@templates/web-modal';
-import { Accordion } from '@atoms/accordion/accordion';
+import Accordion from '@atoms/accordion';
 import { AlertModal } from '@organisms/alert-modal';
 import { resetCreatedQuestion } from '@store/reducers/createQuestionWizard.reducer';
 import { resetCreatePostWizard } from '@store/reducers/createPostWizard.reducer';

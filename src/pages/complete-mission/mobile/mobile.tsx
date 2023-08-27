@@ -1,7 +1,7 @@
-import { Accordion } from '@atoms/accordion/accordion';
-import { Button } from '@atoms/button/button';
-import { Header } from '@atoms/header/header';
-import { Typography } from '@atoms/typography/typography';
+import Accordion from '@atoms/accordion';
+import Button from '@atoms/button';
+import Header from '@atoms/header';
+import Typography from '@atoms/typography';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';

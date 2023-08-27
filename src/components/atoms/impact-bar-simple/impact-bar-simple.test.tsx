@@ -1,7 +1,9 @@
 import React from 'react';
-import {render, screen} from '@testing-library/react';
-import {ImpactBarSimple} from './impact-bar-simple';
+
+import ImpactBarSimple from './impact-bar-simple';
+
 import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 
 describe('impact-bar-simple', () => {
   test(`should set transform value to 'translateX(calc(-100% + 0.75rem))' when current equals 50`, () => {

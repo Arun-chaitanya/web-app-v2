@@ -1,6 +1,6 @@
 import css from './menu-cursor.module.scss';
 import { Outlet, useLocation } from '@tanstack/react-location';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { Menu, getAvatar, menuList } from './menu-cursor.services';
 import { useSelector } from 'react-redux';
 import { RootState } from '@store/store';
@@ -8,7 +8,7 @@ import { IdentityReq } from '@core/types';
 import { SwitchAccount } from './components/switch-account/switch-account';
 import { useEffect, useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { PayloadModel } from '@pages/search/desktop/search.types';
 
 export const MenuCursor = (): JSX.Element => {

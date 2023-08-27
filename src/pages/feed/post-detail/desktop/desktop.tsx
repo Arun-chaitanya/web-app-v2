@@ -5,7 +5,7 @@ import { Modal } from '@templates/modal/modal';
 import { FeedItem } from '@molecules/feed-item/feed-item';
 import Card from '@atoms/card';
 import { SendBox } from '@molecules/send-box/send-box';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { Comment } from '@molecules/comment/comment';
 import { socialCausesToCategory } from '@core/adaptors';
 import { Feed } from '@organisms/feed-list/feed-list.types';

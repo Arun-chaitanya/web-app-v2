@@ -5,7 +5,7 @@ import { SendBox } from '@molecules/send-box/send-box';
 import { ChatList } from '@organisms/chat-list/chat-list';
 import { useMessageDetailShared } from '../message-detail.shared';
 import css from './mobile.module.scss';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 
 export const Mobile = (): JSX.Element => {
   const navigate = useNavigate();

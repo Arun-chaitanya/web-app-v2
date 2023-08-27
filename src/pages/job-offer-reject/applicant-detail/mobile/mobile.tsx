@@ -1,7 +1,7 @@
 import css from './mobile.module.scss';
-import { Header } from '@atoms/header/header';
-import { Accordion } from '@atoms/accordion/accordion';
-import { Button } from '@atoms/button/button';
+import Header from '@atoms/header';
+import Accordion from '@atoms/accordion';
+import Button from '@atoms/button';
 import { printWhen } from '@core/utils';
 import { useApplicantDetailShared } from '../applicant-detail.shared';
 import { ApplicantInfo } from '../components/applicant-info';

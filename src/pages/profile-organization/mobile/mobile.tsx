@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import { Avatar } from '@atoms/avatar/avatar';
-import { ThreeDotsButton } from '@atoms/three-dots-button/three-dots-button';
+import Avatar from '@atoms/avatar';
+import ThreeDotsButton from '@atoms/three-dots-button';
 import { Divider } from '@templates/divider/divider';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Button } from '@atoms/button/button';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Button from '@atoms/button';
 import { ConnectModal } from '../connect-modal';
 import { printWhen } from '@core/utils';
 import { showActions } from '../profile-organization.services';

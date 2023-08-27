@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Steps } from './steps';
+
+import Steps from './steps';
 
 describe('Steps', () => {
   test('should generate steps based on given "total" prop', () => {

@@ -1,4 +1,4 @@
-import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown-v2';
 
 interface CountryCode extends DropdownItem {
   code: string;

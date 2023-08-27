@@ -3,7 +3,7 @@ import css from './tier.module.scss';
 import { TierProps } from './tier.types';
 import { useState } from 'react';
 import { TierSlide } from '../tier-slide/tier-slide';
-import { TierBadge } from '@atoms/tier-badge/tier-badge';
+import TierBadge from '@atoms/tier-badge';
 import { Modal } from '@templates/modal/modal';
 import { isTouchDevice } from '@core/device-type-detector';
 

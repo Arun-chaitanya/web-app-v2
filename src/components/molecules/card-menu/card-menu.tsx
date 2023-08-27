@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-location';
 import Card from '@atoms/card';
-import { Typography } from '@atoms/typography/typography';
+import Typography from '@atoms/typography';
 import css from './card-menu.module.scss';
 import { CardMenuProps } from './card-menu.types';
 

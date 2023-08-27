@@ -1,4 +1,4 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
 import { Modal } from '@templates/modal/modal';
 import { printWhen } from '@core/utils';

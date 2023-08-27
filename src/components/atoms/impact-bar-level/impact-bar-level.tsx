@@ -1,8 +1,9 @@
 import { CSSProperties } from 'react';
+
 import css from './impact-bar-level.module.scss';
 import { ImpactBarLevelProps } from './impact-bar-level.types';
 
-export const ImpactBarLevel = (props: ImpactBarLevelProps): JSX.Element => {
+const ImpactBarLevel = (props: ImpactBarLevelProps): JSX.Element => {
   const { start, end, current, nextLevel, currentLevel, prevLevel, ...rest } = props;
 
   const curr = current - start;
@@ -50,3 +51,5 @@ export const ImpactBarLevel = (props: ImpactBarLevelProps): JSX.Element => {
     </div>
   );
 };
+
+export default ImpactBarLevel;

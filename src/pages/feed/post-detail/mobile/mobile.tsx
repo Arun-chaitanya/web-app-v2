@@ -3,7 +3,7 @@ import { socialCausesToCategory } from '@core/adaptors';
 import { Comment } from '@molecules/comment/comment';
 import { FeedItem } from '@molecules/feed-item/feed-item';
 import { SendBox } from '@molecules/send-box/send-box';
-import { Header } from '@atoms/header/header';
+import Header from '@atoms/header';
 import { usePostDetailShared } from '../post-detail.shared';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';

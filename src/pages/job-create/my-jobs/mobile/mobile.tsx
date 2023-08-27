@@ -1,9 +1,9 @@
 import { useNavigate } from '@tanstack/react-location';
-import { Accordion } from '@atoms/accordion/accordion';
-import { Header } from '@atoms/header/header';
-import { Tabs } from '@atoms/tabs/tabs';
+import Accordion from '@atoms/accordion';
+import Header from '@atoms/header';
+import Tabs from '@atoms/tabs';
 import { JobCardList } from '@organisms/job-card-list/job-card-list';
-import { Fab } from '@atoms/fab/fab';
+import Fab from '@atoms/fab';
 import { useMyJobShared } from '../my-job.shared';
 import css from './mobile.module.scss';
 

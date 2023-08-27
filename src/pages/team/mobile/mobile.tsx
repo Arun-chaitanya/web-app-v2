@@ -1,6 +1,6 @@
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
-import { Header } from '@atoms/header-v2/header';
-import { Avatar } from '@atoms/avatar/avatar';
+import Header from '@atoms/header-v2';
+import Avatar from '@atoms/avatar';
 import { AddMemberModal } from '../add-member-modal';
 import { SureModal } from '@templates/sure-modal';
 import { printWhen } from '@core/utils';

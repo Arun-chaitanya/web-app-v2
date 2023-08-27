@@ -1,4 +1,4 @@
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { Modal } from '@templates/modal/modal';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { CreateChatModalProps } from './create-chat-modal.types';

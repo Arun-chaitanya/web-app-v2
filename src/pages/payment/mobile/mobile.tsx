@@ -1,7 +1,7 @@
 import { useNavigate } from '@tanstack/react-location';
 import Dapp from '@dapp';
-import { Header } from '@atoms/header-v2/header';
-import { Button } from '@atoms/button/button';
+import Header from '@atoms/header-v2';
+import Button from '@atoms/button';
 import { JobDescrioptionCard } from '@templates/job-description-card';
 import { PaymentSummaryCard } from '@templates/payment-summary-card';
 import { PaymentMethods } from '@templates/payment-methods';

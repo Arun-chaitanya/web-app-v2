@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Dialog } from '@mui/material';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import Card from '@atoms/card';
 import { FeedList } from '@organisms/feed-list/feed-list';
 import { DialogCreate } from '../dialog-create/dialog-create';
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { IdentityReq } from '@core/types';
 import { RootState } from '@store/store';
 import { visibility } from '@store/reducers/menu.reducer';

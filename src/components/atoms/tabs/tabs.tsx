@@ -1,8 +1,9 @@
 import { useState } from 'react';
+
 import css from './tabs.module.scss';
 import { TabsProps } from './tabs.types';
 
-export const Tabs = ({ tabs, onClick }: TabsProps): JSX.Element => {
+const Tabs = ({ tabs, onClick }: TabsProps): JSX.Element => {
   const initialIndex = tabs.findIndex((tab) => tab.default);
   const [selectedIndex, setSelectedIndex] = useState<number>(initialIndex);
 
@@ -38,3 +39,5 @@ export const Tabs = ({ tabs, onClick }: TabsProps): JSX.Element => {
     </>
   );
 };
+
+export default Tabs;

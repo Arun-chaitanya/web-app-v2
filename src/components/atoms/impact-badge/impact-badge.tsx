@@ -1,7 +1,7 @@
 import css from './impact-badge.module.scss';
 import { ImpactBadgeProps } from './impact-badge.types';
 
-export const ImpactBadge = (props: ImpactBadgeProps): JSX.Element => {
+const ImpactBadge = (props: ImpactBadgeProps): JSX.Element => {
   return (
     <div
       role="button"
@@ -12,3 +12,5 @@ export const ImpactBadge = (props: ImpactBadgeProps): JSX.Element => {
     </div>
   );
 };
+
+export default ImpactBadge;

@@ -1,11 +1,11 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useDispatch } from 'react-redux';
-import { Input } from '@atoms/input/input';
-import { Textarea } from '@atoms/textarea/textarea';
+import Input from '@atoms/input';
+import Textarea from '@atoms/textarea';
 import { Divider } from '@templates/divider/divider';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Dropdown from '@atoms/dropdown-v2';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { COUNTRIES } from '@constants/COUNTRIES';
 import { PROJECT_REMOTE_PREFERENCES_V2 } from '@constants/PROJECT_REMOTE_PREFERENCE';
 import { PROJECT_PAYMENT_TYPE } from '@constants/PROJECT_PAYMENT_TYPE';

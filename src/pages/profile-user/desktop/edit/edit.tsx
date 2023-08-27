@@ -1,18 +1,18 @@
-import { Header } from '@atoms/header-v2/header';
+import Header from '@atoms/header-v2';
 import css from './edit.module.scss';
 import { Modal } from '@templates/modal/modal';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Textarea from '@atoms/textarea';
+import Dropdown from '@atoms/dropdown-v2';
 import { COUNTRIES } from '@constants/COUNTRIES';
 import { COUNTRY_CODES } from '@constants/COUNTRY_CODE';
 import { Category } from '@molecules/category/category';
 import { skillsToCategoryAdaptor, socialCausesToCategoryAdaptor } from '@core/adaptors';
 import { useRef, useState } from 'react';
 import { useProfileUserEditShared } from '@pages/profile-user-edit/profile-user-edit.shared';
-import { Input } from '@atoms/input/input';
+import Input from '@atoms/input';
 import { EditProps } from './edit.types';
-import { Popover } from '@atoms/popover/popover';
-import { PopoverProps } from '@atoms/popover/popover.types';
+import Popover from '@atoms/popover';
+import { PopoverProps } from '@atoms/popover';
 
 export const Edit = (props: EditProps): JSX.Element => {
   const [coverLetterMenuOpen, setCoverLetterMenu] = useState(false);

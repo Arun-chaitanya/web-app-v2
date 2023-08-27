@@ -1,11 +1,11 @@
-// @ts-nocheck
-import css from './level-item.module.scss';
-import {ImpactBar} from '@atoms/impact-bar/impact-bar';
-import {Typography} from '@atoms/typography/typography';
-import {LevelsProps} from '@pages/levels/levels.types';
-import {LevelBadge} from '@atoms/level-badge/level-badge';
+import ImpactBar from '@atoms/impact-bar';
+import LevelBadge from '@atoms/level-badge';
+import Typography from '@atoms/typography';
+import { LevelsProps } from '@pages/levels/levels.types';
 
-export const LevelItem = ({level}: LevelsProps): JSX.Element => {
+import css from './level-item.module.scss';
+
+export const LevelItem = ({ level }: LevelsProps): JSX.Element => {
   return (
     <div className={css.container}>
       <LevelBadge level={level} size="s" />

@@ -2,7 +2,7 @@ import { SyntheticEvent, useState } from 'react';
 import { useAuth } from '@hooks/use-auth';
 import { AuthGuardProps } from './auth-guard.types';
 import { Modal } from '@templates/modal/modal';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import css from './auth-guard.module.scss';
 import { useLocation, useNavigate } from '@tanstack/react-location';
 import { nonPermanentStorage } from '../storage/non-permanent';

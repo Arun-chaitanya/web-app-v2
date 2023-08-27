@@ -1,7 +1,7 @@
 import css from './mobile.module.scss';
-import { Button } from '@atoms/button/button';
-import { Steps } from '@atoms/steps/steps';
-import { Textarea } from '@atoms/textarea/textarea';
+import Button from '@atoms/button';
+import Steps from '@atoms/steps';
+import Textarea from '@atoms/textarea';
 import { required, useForm } from '@core/form';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 

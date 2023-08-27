@@ -1,10 +1,12 @@
+import clsx from 'clsx';
 import { forwardRef, useState } from 'react';
+
 import { printWhen } from '@core/utils';
+
 import css from './input.module.scss';
 import { InputProps } from './input.types';
-import clsx from 'clsx';
 
-export const Input = forwardRef((props: InputProps, ref): JSX.Element => {
+const Input = forwardRef((props: InputProps, ref): JSX.Element => {
   const { optional = false, variant = 'outline', type, inputClassName, ...rest } = props;
   const [outline, setOutline] = useState(false);
   const controlErrors = props?.register?.controls[props.name]?.errors || [];
@@ -89,3 +91,5 @@ export const Input = forwardRef((props: InputProps, ref): JSX.Element => {
     </div>
   );
 });
+
+export default Input;

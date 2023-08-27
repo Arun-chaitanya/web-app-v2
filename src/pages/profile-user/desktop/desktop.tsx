@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { Divider } from '@templates/divider/divider';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Button } from '@atoms/button/button';
-import { ImpactBadge } from '@atoms/impact-badge/impact-badge';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Button from '@atoms/button';
+import ImpactBadge from '@atoms/impact-badge';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import Card from '@atoms/card';
 import { ConnectModal } from '@pages/profile-organization/connect-modal';

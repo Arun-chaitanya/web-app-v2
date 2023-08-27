@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-location';
 import { NotificationList } from '@organisms/notification-list/notification-list';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { useNotificationsShared } from '../notifications.shared';
 import css from './mobile.module.scss';
 

@@ -1,5 +1,5 @@
 import { useNavigate } from '@tanstack/react-location';
-import { Accordion } from '@atoms/accordion/accordion';
+import Accordion from '@atoms/accordion';
 import { ApplicantList } from '@molecules/applicant-list/applicant-list';
 import { applicantToApplicantListAdaptor, rejectApplicant } from '../../../job-offer-reject.services';
 import { ApplicantsProps } from './applicants.types';
