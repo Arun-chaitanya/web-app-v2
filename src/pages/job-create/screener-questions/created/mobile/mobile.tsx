@@ -1,10 +1,10 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import store from 'src/store/store';
+import store from '@store/store';
 import { Accordion } from '@atoms/accordion/accordion';
 import { Button } from '@atoms/button/button';
-import { resetCreatedQuestion } from 'src/store/reducers/createQuestionWizard.reducer';
-import { resetCreatePostWizard } from 'src/store/reducers/createPostWizard.reducer';
-import { dialog } from 'src/core/dialog/dialog';
+import { resetCreatedQuestion } from '@store/reducers/createQuestionWizard.reducer';
+import { resetCreatePostWizard } from '@store/reducers/createPostWizard.reducer';
+import { dialog } from '@core/dialog/dialog';
 import { useCreatedShared } from '../created.shared';
 import css from './mobile.module.scss';
 

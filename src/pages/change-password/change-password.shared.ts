@@ -1,8 +1,8 @@
 import { useNavigate } from '@tanstack/react-location';
-import { useForm } from 'src/core/form';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
+import { useForm } from '@core/form';
+import { getFormValues } from '@core/form/customValidators/formValues';
 import { changePassword } from './change-password.services';
-import { dialog } from 'src/core/dialog/dialog';
+import { dialog } from '@core/dialog/dialog';
 import { formModel } from './change-password.form';
 
 export const useChangePasswordShared = () => {

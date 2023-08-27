@@ -1,7 +1,7 @@
 import css from './radio-group.module.scss';
 import { Radio } from '@atoms/radio/radio';
 import { RadioGroupProps } from './radio-group.types';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 
 export const RadioGroup = (props: RadioGroupProps): JSX.Element => {
   return (

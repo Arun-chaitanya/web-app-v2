@@ -6,10 +6,10 @@ import Card from '@atoms/card';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Button } from '@atoms/button/button';
 import { UnfollowModal } from '../unfollow-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useFollowingsShared } from '../followings.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

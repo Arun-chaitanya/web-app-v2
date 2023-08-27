@@ -7,7 +7,7 @@ import { Reward } from '../components/reward/reward';
 import { getTierRowBasedOnCurrentTier } from '../achievements.services';
 import { Modal } from '@templates/modal/modal';
 import { ClaimPoints } from '../components/claim-points/claim-points';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import clsx from 'clsx';
 
 export const Desktop = (): JSX.Element => {

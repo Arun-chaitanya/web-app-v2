@@ -1,8 +1,8 @@
 import { ConfirmOptions, Dialog } from '@capacitor/dialog';
 import { useDispatch } from 'react-redux';
 import { AlertConfirm } from '@molecules/alert-confirm/alert-confirm';
-import { isTouchDevice } from 'src/core/device-type-detector';
-import { closeModal, openModal } from 'src/store/reducers/modal.reducer';
+import { isTouchDevice } from '@core/device-type-detector';
+import { closeModal, openModal } from '@store/reducers/modal.reducer';
 
 export const useAlert = () => {
   const dispatch = useDispatch();

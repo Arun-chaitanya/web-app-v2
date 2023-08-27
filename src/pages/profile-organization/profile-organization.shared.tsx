@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
-import { skillsToCategory, socialCausesToCategory } from 'src/core/adaptors';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
-import { ConnectStatus, IdentityReq } from 'src/core/types';
+import { RootState } from '@store/store';
+import { hapticsImpactLight } from '@core/haptic/haptic';
+import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
+import { ConnectStatus, IdentityReq } from '@core/types';
 import { ProfileReq, Resolver } from './profile-organization.types';
 import { getConnectStatus, sendRequestConnection } from './profile-organization.services';
-import { PostUpdateProfileResp } from 'src/core/endpoints/index.types';
+import { PostUpdateProfileResp } from '@core/endpoints/index.types';
 
 export const useProfileOrganizationShared = () => {
   const navigate = useNavigate();

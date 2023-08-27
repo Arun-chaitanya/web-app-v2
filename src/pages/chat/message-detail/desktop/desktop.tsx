@@ -20,7 +20,7 @@ import {
 import { createChats } from '../../new-chat/new-chat.services';
 import { useMessageDetailShared } from '../message-detail.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = (): JSX.Element => {
   const navigate = useNavigate();

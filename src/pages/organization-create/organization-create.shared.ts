@@ -8,15 +8,15 @@ import {
   setMission,
   setOrgType,
   setSocialCauses,
-} from 'src/store/reducers/createOrgWizard.reducer';
-import { RootState } from 'src/store/store';
+} from '@store/reducers/createOrgWizard.reducer';
+import { RootState } from '@store/store';
 import { formModel } from './profile/profile.form';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 import { updateForm } from './profile/profile.services';
 import { addOrganization, wizardFormToPayloadAdaptor } from './organization-create';
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
-import { handleError } from 'src/core/http';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
+import { handleError } from '@core/http';
 
 export const useOrganizationCreateShared = () => {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import Dapp from 'src/dapp';
+import Dapp from '@dapp';
 import { Accordion } from '@atoms/accordion/accordion';
 import { Button } from '@atoms/button/button';
 import { Header } from '@atoms/header-v2/header';
@@ -7,15 +7,15 @@ import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import { PaymentMethods } from '@templates/payment-methods';
-import { translatePaymentTerms } from 'src/constants/PROJECT_PAYMENT_SCHEME';
-import { translatePaymentType } from 'src/constants/PROJECT_PAYMENT_TYPE';
-import { translateRemotePreferences } from 'src/constants/PROJECT_REMOTE_PREFERENCE';
-import { printWhen } from 'src/core/utils';
+import { translatePaymentTerms } from '@constants/PROJECT_PAYMENT_SCHEME';
+import { translatePaymentType } from '@constants/PROJECT_PAYMENT_TYPE';
+import { translateRemotePreferences } from '@constants/PROJECT_REMOTE_PREFERENCE';
+import { printWhen } from '@core/utils';
 import { useOfferReceivedShared, useWalletShared } from '../offer-received.shared';
 import css from './mobile.module.scss';
 import { BankAccounts } from '@templates/bank-accounts';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
+import { COUNTRIES } from '@constants/COUNTRIES';
 
 export const Mobile = (): JSX.Element => {
   const { offer, media, status, account, isPaidCrypto, unit, onAccept, onDeclined, equivalentUSD } =

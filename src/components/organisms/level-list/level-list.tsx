@@ -1,5 +1,5 @@
 import css from './level-list.module.scss';
-import {LevelItem} from '../../molecules/level-item/level-item';
+import {LevelItem} from '@molecules/level-item/level-item';
 import {LevelListProps} from './level-list.types';
 
 const LIST = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

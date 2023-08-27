@@ -6,7 +6,7 @@ import { useNavigate } from '@tanstack/react-location';
 import { PayloadModel } from '../desktop/search.types';
 import { SocialCausesFilter } from '../desktop/filter-bar/social-causes-filter/social-causes-filter';
 import { SkillsFilter } from '../desktop/filter-bar/skills-filter/skills-filter';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { PeopleList } from '../components/people-list/people-list';
 import { JobList } from '@organisms/job-list/job-list';
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { skillsToCategoryAdaptor } from 'src/core/adaptors';
-import { RootState } from 'src/store/store';
+import { skillsToCategoryAdaptor } from '@core/adaptors';
+import { RootState } from '@store/store';
 
 export const useSkillsShared = () => {
   const [socialCauses, setSocialCauses] = useState(skillsToCategoryAdaptor());

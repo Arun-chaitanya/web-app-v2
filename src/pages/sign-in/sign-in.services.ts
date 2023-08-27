@@ -1,6 +1,6 @@
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
-import { post } from '../../core/http';
-import { LoginResp } from '../../core/types';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
+import { post } from '@core/http';
+import { LoginResp } from '@core/types';
 import { LoginPayload } from './sign-in.types';
 import { config } from 'src/config';
 

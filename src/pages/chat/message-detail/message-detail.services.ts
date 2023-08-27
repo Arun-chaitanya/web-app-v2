@@ -5,9 +5,9 @@ import {
   PostMessagePayload,
   PostMessageResp,
   UserType,
-} from '../../../core/types';
-import { get, post } from '../../../core/http';
-import { MessagesReq } from '../../../core/types';
+} from '@core/types';
+import { get, post } from '@core/http';
+import { MessagesReq } from '@core/types';
 import { Message } from '@atoms/message/message.types';
 import { OnPostMessageParams, ParticipantDetail } from './message-detail.types';
 

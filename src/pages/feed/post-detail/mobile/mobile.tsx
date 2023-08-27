@@ -1,5 +1,5 @@
 import { useNavigate } from '@tanstack/react-location';
-import { socialCausesToCategory } from 'src/core/adaptors';
+import { socialCausesToCategory } from '@core/adaptors';
 import { Comment } from '@molecules/comment/comment';
 import { FeedItem } from '@molecules/feed-item/feed-item';
 import { SendBox } from '@molecules/send-box/send-box';

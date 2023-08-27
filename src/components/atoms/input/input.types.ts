@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { FormGroup } from '../../../core/form/useForm/useForm.types';
+import { FormGroup } from '@core/form/useForm/useForm.types';
 
 type ReactHTMLInputElement = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
 export interface InputProps extends ReactHTMLInputElement {

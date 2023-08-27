@@ -1,4 +1,4 @@
-import { Tiers } from 'src/constants/TIERS_TABLE';
+import { Tiers } from '@constants/TIERS_TABLE';
 
 export type RewardProps = {
   tier: Tiers | undefined;

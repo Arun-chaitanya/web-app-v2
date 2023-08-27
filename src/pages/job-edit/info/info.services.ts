@@ -1,6 +1,6 @@
 import { AnyAction } from '@reduxjs/toolkit';
 import { Dispatch } from 'react';
-import { get, post } from 'src/core/http';
+import { get, post } from '@core/http';
 import { formModel } from './info.form';
 import {
   CreatePostWizard,
@@ -15,9 +15,9 @@ import {
   setPostProjectType,
   setPostRemotePreference,
   setPostTitle,
-} from 'src/store/reducers/createPostWizard.reducer';
-import { CategoriesResp, Cities, CreatePostPayload, Pagination } from 'src/core/types';
-import { ControlPrimitiveValue } from 'src/core/form/useForm/useForm.types';
+} from '@store/reducers/createPostWizard.reducer';
+import { CategoriesResp, Cities, CreatePostPayload, Pagination } from '@core/types';
+import { ControlPrimitiveValue } from '@core/form/useForm/useForm.types';
 import { Job } from '@organisms/job-list/job-list.types';
 
 export async function getJobCategories(): Promise<CategoriesResp> {

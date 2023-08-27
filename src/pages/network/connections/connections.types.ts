@@ -1,3 +1,3 @@
-import { ConnectionItem, Pagination, UserType } from 'src/core/types';
+import { ConnectionItem, Pagination, UserType } from '@core/types';
 
 export type Resolver = Pagination<ConnectionItem[]>;

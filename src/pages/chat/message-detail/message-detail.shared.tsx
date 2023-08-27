@@ -1,9 +1,9 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { socket } from 'src/core/socket';
-import { IdentityReq } from 'src/core/types';
+import { RootState } from '@store/store';
+import { socket } from '@core/socket';
+import { IdentityReq } from '@core/types';
 import { MessageLoader } from './message-detail.types';
 import {
   chatListAdaptor,

@@ -1,4 +1,4 @@
-import { TIERS } from '../../../constants/TIERS_TABLE';
+import { TIERS } from '@constants/TIERS_TABLE';
 
 export function evaluateTier(points: number) {
   const currentTier = TIERS.find(({ min, max }) => min < points && max > points);

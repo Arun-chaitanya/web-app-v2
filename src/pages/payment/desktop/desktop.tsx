@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Dapp from 'src/dapp';
+import Dapp from '@dapp';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import { JobDescrioptionCard } from '@templates/job-description-card';
 import { PaymentSummaryCard } from '@templates/payment-summary-card';
@@ -7,8 +7,8 @@ import { PaymentMethods } from '@templates/payment-methods';
 import { Button } from '@atoms/button/button';
 import { BackLink } from '@molecules/back-link';
 import { AddCardModal } from '../credit-card/add-card-modal';
-import { printWhen } from 'src/core/utils';
-import { useAuth } from 'src/hooks/use-auth';
+import { printWhen } from '@core/utils';
+import { useAuth } from '@hooks/use-auth';
 import { usePaymentShared } from '../payment.shared';
 import css from './desktop.module.scss';
 

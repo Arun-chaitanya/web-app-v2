@@ -2,9 +2,9 @@ import { CardSlideUp } from '@templates/card-slide-up/card-slide-up';
 import css from './category.module.scss';
 import { CategoryItem, CategoryProps } from './category.types';
 import { useState } from 'react';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 import { Modal } from '@templates/modal/modal';
 import { Search } from '@atoms/search/search';
 

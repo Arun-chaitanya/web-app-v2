@@ -1,4 +1,4 @@
-import { isTouchDevice } from '../../../core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 import { BottomStaticTouch } from './bottom-static-touch/bottom-static-touch';
 import css from './bottom-static.module.scss';
 import { BottomStaticProps } from './bottom-static.types';

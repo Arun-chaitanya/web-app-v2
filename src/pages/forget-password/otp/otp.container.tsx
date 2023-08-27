@@ -1,4 +1,4 @@
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 import { Mobile } from './mobile/mobile';
 import { Desktop } from './desktop/desktop';
 

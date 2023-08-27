@@ -1,4 +1,4 @@
-import { toRelativeTime } from '../../../core/relative-time';
+import { toRelativeTime } from '@core/relative-time';
 import { ActionList } from '@atoms/action-list/action-list';
 import { Avatar } from '@atoms/avatar/avatar';
 import Card from '@atoms/card';
@@ -7,7 +7,7 @@ import { ExpandableText } from '@atoms/expandable-text';
 import { Typography } from '@atoms/typography/typography';
 import { FeedItemProps } from './feed-item.types';
 import css from './feed-item.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const FeedItem = (props: FeedItemProps): JSX.Element => {
   const { type, actionList, date, lineLimit = 3, img, name, imgAvatar } = props;

@@ -1,6 +1,6 @@
-import { nonPermanentStorage } from 'src/core/storage/non-permanent';
-import { Cookie } from '../../core/storage';
-import { get, post } from '../../core/http';
+import { nonPermanentStorage } from '@core/storage/non-permanent';
+import { Cookie } from '@core/storage';
+import { get, post } from '@core/http';
 
 export async function logout() {
   //   Cookie.flush();

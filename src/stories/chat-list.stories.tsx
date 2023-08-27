@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ChatList } from '../components/organisms/chat-list/chat-list';
-import { ChatListProps } from '../components/organisms/chat-list/chat-list.types';
+import { ChatList } from '@organisms/chat-list/chat-list';
+import { ChatListProps } from '@organisms/chat-list/chat-list.types';
 
 export default {
   title: 'ORGANISM/ChatList',

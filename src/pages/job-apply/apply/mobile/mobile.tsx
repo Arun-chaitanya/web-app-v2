@@ -7,7 +7,7 @@ import { Button } from '@atoms/button/button';
 import { Checkbox } from '@atoms/checkbox/checkbox';
 import { Header } from '@atoms/header/header';
 import { ExpandableText } from '@atoms/expandable-text';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useApplyShared } from '../apply.shared';
 import css from './mobile.module.scss';
 

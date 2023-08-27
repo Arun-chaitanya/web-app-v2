@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
-import { NotificationSettings } from 'src/constants/constants';
-import { endpoint } from 'src/core/endpoints';
+import { NotificationSettings } from '@constants/constants';
+import { endpoint } from '@core/endpoints';
 import { Payload } from './settings.types';
-import { NotificationSettingsRes } from 'src/core/types';
+import { NotificationSettingsRes } from '@core/types';
 
 export const useSettingsShared = () => {
   const { settings } = useMatch().data as NotificationSettingsRes;

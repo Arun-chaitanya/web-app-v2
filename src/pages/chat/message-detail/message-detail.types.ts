@@ -8,7 +8,7 @@ import {
   ParticipantsReq,
   SummaryReq,
   UserType,
-} from '../../../core/types';
+} from '@core/types';
 
 export type MessageLoader = MakeGenerics<{
   LoaderData: {

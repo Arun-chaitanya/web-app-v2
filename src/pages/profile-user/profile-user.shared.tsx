@@ -1,14 +1,14 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { ConnectStatus, IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
+import { ConnectStatus, IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 import { ProfileReq, Resolver } from './profile-user.types';
-import { skillsToCategory, socialCausesToCategory } from 'src/core/adaptors';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
+import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 import { useEffect, useState } from 'react';
-import { endpoint } from 'src/core/endpoints';
-import { PostUpdateProfileResp } from 'src/core/endpoints/index.types';
+import { endpoint } from '@core/endpoints';
+import { PostUpdateProfileResp } from '@core/endpoints/index.types';
 import { getConnectStatus, sendRequestConnection } from './profile-user.services';
 
 export const useProfileUserShared = () => {

@@ -1,4 +1,4 @@
-import { Offer, Pagination } from '../../../../../core/types';
+import { Offer, Pagination } from '@core/types';
 
 export type OfferedProps = {
   sent: Pagination<Offer[]>;

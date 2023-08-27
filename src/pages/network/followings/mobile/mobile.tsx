@@ -4,7 +4,7 @@ import { Header } from '@atoms/header/header';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Button } from '@atoms/button/button';
 import { UnfollowModal } from '../unfollow-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useFollowingsShared } from '../followings.shared';
 import css from './mobile.module.scss';
 

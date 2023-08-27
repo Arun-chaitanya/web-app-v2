@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import Dapp from 'src/dapp';
-import { StripeProfileResp } from 'src/core/types';
+import Dapp from '@dapp';
+import { StripeProfileResp } from '@core/types';
 import { useMatch } from '@tanstack/react-location';
 import { useAccount } from 'wagmi';
 import { Resolver } from './offer-received.types';
-import { StatusKeys } from 'src/constants/APPLICANT_STATUS';
-import { endpoint } from 'src/core/endpoints';
-import { useForm } from 'src/core/form';
-import { dialog } from 'src/core/dialog/dialog';
+import { StatusKeys } from '@constants/APPLICANT_STATUS';
+import { endpoint } from '@core/endpoints';
+import { useForm } from '@core/form';
+import { dialog } from '@core/dialog/dialog';
 import { findTokenRate, getStripeLink, getSrtipeProfile, formModel } from './offer-received.services';
 
 export const useOfferReceivedShared = () => {

@@ -1,4 +1,4 @@
-import { Pagination } from 'src/core/types';
+import { Pagination } from '@core/types';
 import { Feed } from '@organisms/feed-list/feed-list.types';
 
 export type Resolver = Pagination<Feed[]>;

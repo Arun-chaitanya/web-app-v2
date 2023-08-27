@@ -1,8 +1,8 @@
 import { Modal } from '@templates/modal/modal';
 import { Button } from '@atoms/button/button';
 import { Input } from '@atoms/input/input';
-import { printWhen } from 'src/core/utils';
-import { endpoint } from 'src/core/endpoints';
+import { printWhen } from '@core/utils';
+import { endpoint } from '@core/endpoints';
 import { AddCardModalProps } from './add-card-modal.types';
 import { getCreditCardInfo } from '../../payment.service';
 import { useCreditCardShared } from '../credit-card.shared';

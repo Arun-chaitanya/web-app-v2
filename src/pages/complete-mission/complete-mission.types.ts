@@ -1,5 +1,5 @@
-import { PostMediaUploadResp } from 'src/core/endpoints/index.types';
-import { MissionsResp, Offer } from '../../core/types';
+import { PostMediaUploadResp } from '@core/endpoints/index.types';
+import { MissionsResp, Offer } from '@core/types';
 
 export type Loader = {
   offer: Offer;

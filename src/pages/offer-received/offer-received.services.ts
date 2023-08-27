@@ -1,7 +1,7 @@
-import { required } from 'src/core/form';
-import { FormModel } from 'src/core/form/useForm/useForm.types';
-import { endpoint } from 'src/core/endpoints/index';
-import { get } from 'src/core/http';
+import { required } from '@core/form';
+import { FormModel } from '@core/form/useForm/useForm.types';
+import { endpoint } from '@core/endpoints/index';
+import { get } from '@core/http';
 
 export async function receivedOfferLoader(params: { id: string }) {
   const offer = await endpoint.get.offers.offer_id(params.id);

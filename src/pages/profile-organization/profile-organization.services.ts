@@ -1,8 +1,8 @@
 import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
-import { dialog } from 'src/core/dialog/dialog';
-import { endpoint } from 'src/core/endpoints';
-import { get, post } from 'src/core/http';
-import { BADGES } from 'src/constants/constants';
+import { dialog } from '@core/dialog/dialog';
+import { endpoint } from '@core/endpoints';
+import { get, post } from '@core/http';
+import { BADGES } from '@constants/constants';
 import { ImpactBadgeProps } from '@atoms/impact-badge/impact-badge.types';
 
 export async function getUserDetail(username: string) {

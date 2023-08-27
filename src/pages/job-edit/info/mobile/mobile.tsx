@@ -6,21 +6,21 @@ import { Divider } from '@templates/divider/divider';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { Button } from '@atoms/button/button';
-import { COUNTRIES, COUNTRIES_DICT } from 'src/constants/COUNTRIES';
-import { PROJECT_REMOTE_PREFERENCES_V2, translateRemotePreferences } from 'src/constants/PROJECT_REMOTE_PREFERENCE';
-import { PROJECT_PAYMENT_TYPE } from 'src/constants/PROJECT_PAYMENT_TYPE';
-import { PROJECT_TYPE_DICT, PROJECT_TYPE_V2 } from 'src/constants/PROJECT_TYPES';
-import { PROJECT_LENGTH_V2, translateProjectLength } from 'src/constants/PROJECT_LENGTH';
-import { PROJECT_PAYMENT_SCHEME } from 'src/constants/PROJECT_PAYMENT_SCHEME';
-import { EXPERIENCE_LEVEL_V2, translateExperienceLevel } from 'src/constants/EXPERIENCE_LEVEL';
-import { jobCategoriesToDropdown } from 'src/core/adaptors';
+import { COUNTRIES, COUNTRIES_DICT } from '@constants/COUNTRIES';
+import { PROJECT_REMOTE_PREFERENCES_V2, translateRemotePreferences } from '@constants/PROJECT_REMOTE_PREFERENCE';
+import { PROJECT_PAYMENT_TYPE } from '@constants/PROJECT_PAYMENT_TYPE';
+import { PROJECT_TYPE_DICT, PROJECT_TYPE_V2 } from '@constants/PROJECT_TYPES';
+import { PROJECT_LENGTH_V2, translateProjectLength } from '@constants/PROJECT_LENGTH';
+import { PROJECT_PAYMENT_SCHEME } from '@constants/PROJECT_PAYMENT_SCHEME';
+import { EXPERIENCE_LEVEL_V2, translateExperienceLevel } from '@constants/EXPERIENCE_LEVEL';
+import { jobCategoriesToDropdown } from '@core/adaptors';
 import {
   setPostPaymentScheme,
   setPostPaymentType,
   setInitPostWizard,
-} from 'src/store/reducers/createPostWizard.reducer';
-import { printWhen } from 'src/core/utils';
-import { CategoriesResp, CreatePostPayload } from 'src/core/types';
+} from '@store/reducers/createPostWizard.reducer';
+import { printWhen } from '@core/utils';
+import { CategoriesResp, CreatePostPayload } from '@core/types';
 import { createFormInitState, jobEditRequest } from '../info.services';
 import { useInfoShared } from '../info.shared';
 import css from './mobile.module.scss';

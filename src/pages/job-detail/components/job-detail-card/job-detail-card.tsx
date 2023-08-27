@@ -3,16 +3,16 @@ import css from './job-detail-card.module.scss';
 import Card from '@atoms/card';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { ExpandableText } from '@atoms/expandable-text';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { Button } from '@atoms/button/button';
-import { skillsToCategory, socialCausesToCategory } from 'src/core/adaptors';
+import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
 import { getCategories } from '../../job-detail.services';
 import { JobDetailCardProps } from './job-detail-card.types';
 import { useState } from 'react';
-import { ApplyModal } from 'src/pages/job-apply/apply/apply-modal';
-import { AuthGuard } from 'src/core/auth-guard/auth-guard';
+import { ApplyModal } from '@pages/job-apply/apply/apply-modal';
+import { AuthGuard } from '@core/auth-guard/auth-guard';
 import clsx from 'clsx';
 
 export function JobDetailCard(props: JobDetailCardProps) {

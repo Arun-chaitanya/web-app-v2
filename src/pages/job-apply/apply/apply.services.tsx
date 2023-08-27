@@ -1,7 +1,7 @@
-import { get, post } from 'src/core/http';
-import { QuestionsRes } from 'src/core/types';
+import { get, post } from '@core/http';
+import { QuestionsRes } from '@core/types';
 import { ApplyApplicationPayload, Resume } from './apply.types';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
+import { getFormValues } from '@core/form/customValidators/formValues';
 import { RadioGroupProps } from '@molecules/radio-group/radio-group.types';
 
 export async function getScreeningQuestions(id: string): Promise<QuestionsRes> {

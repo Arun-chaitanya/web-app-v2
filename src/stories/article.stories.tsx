@@ -1,5 +1,5 @@
 import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Article} from '../components/molecules/article/article';
+import {Article} from '@molecules/article/article';
 
 export default {
   title: 'MOLECULES/Article',

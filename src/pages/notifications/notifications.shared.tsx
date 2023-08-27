@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { getNotificationList } from './notifications.service';
-import { IdentityReq } from 'src/core/types';
+import { IdentityReq } from '@core/types';
 import { Resolver } from './notifications.types';
 
 export const useNotificationsShared = () => {

@@ -1,18 +1,18 @@
 import { useMemo, useState } from 'react';
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 import { cityDispatcher, showActionSheet, uploadImage } from './profile-user-edit.services';
-import { ProfileReq } from 'src/pages/profile-organization/profile-organization.types';
+import { ProfileReq } from '@pages/profile-organization/profile-organization.types';
 import { Camera } from '@capacitor/camera';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
-import { endpoint } from 'src/core/endpoints';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
+import { endpoint } from '@core/endpoints';
+import { getFormValues } from '@core/form/customValidators/formValues';
 import { generateFormModel } from './profile-user-edit.form';
 import { useDispatch } from 'react-redux';
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
-import { dialog } from 'src/core/dialog/dialog';
-import { removedEmptyProps } from 'src/core/utils';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
+import { dialog } from '@core/dialog/dialog';
+import { removedEmptyProps } from '@core/utils';
 import { EditProps } from '../profile-user/desktop/edit/edit.types';
 
 export const useProfileUserEditShared = (props?: EditProps) => {

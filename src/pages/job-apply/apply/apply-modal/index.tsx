@@ -7,7 +7,7 @@ import { Button } from '@atoms/button/button';
 import { Checkbox } from '@atoms/checkbox/checkbox';
 import { ExpandableText } from '@atoms/expandable-text';
 import { ModalProps } from '@templates/modal/modal.types';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { resumeInitialState } from '../apply.services';
 import { useApplyShared } from '../apply.shared';
 import css from './apply-modal.module.scss';

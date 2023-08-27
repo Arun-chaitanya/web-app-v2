@@ -1,4 +1,4 @@
-import { FormGroup } from '../../../core/form/useForm/useForm.types';
+import { FormGroup } from '@core/form/useForm/useForm.types';
 
 export type DropdownProps = {
   list: Items[];

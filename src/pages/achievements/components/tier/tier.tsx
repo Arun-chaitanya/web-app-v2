@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { TierSlide } from '../tier-slide/tier-slide';
 import { TierBadge } from '@atoms/tier-badge/tier-badge';
 import { Modal } from '@templates/modal/modal';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 
 export const Tier = (props: TierProps): JSX.Element => {
   const [slideVisibility, setSlideVisibility] = useState(false);

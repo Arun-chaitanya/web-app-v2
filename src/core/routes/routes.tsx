@@ -1,44 +1,44 @@
 import { Navigate, Route } from '@tanstack/react-location';
-import { getChatsSummery, getFollowings } from '../../pages/chat/contact-list/contact-list.services';
-import { MenuCursor as RootCursorLayout } from '../../components/templates/menu-cursor/menu-cursor';
-import { MenuTouch as RootTouchLayout } from '../../components/templates/menu-touch/menu-touch';
+import { getChatsSummery, getFollowings } from '@pages/chat/contact-list/contact-list.services';
+import { MenuCursor as RootCursorLayout } from '@templates/menu-cursor/menu-cursor';
+import { MenuTouch as RootTouchLayout } from '@templates/menu-touch/menu-touch';
 import { isTouchDevice } from '../device-type-detector';
-import { getMessagesById, getParticipantsById } from '../../pages/chat/message-detail/message-detail.services';
-import { createChats } from '../../pages/chat/new-chat/new-chat.services';
-import { getActiveJobs, getArchivedJobs, getDraftJobs } from '../../pages/job-create/my-jobs/my-jobs.services';
-import { getFeedList } from '../../pages/feed/mobile/mobile.service';
-import { getComments, getPostDetail } from '../../pages/feed/post-detail/post-detail.service';
-import { getJobCategories } from '../../pages/job-create/info/info.services';
-import { getNotificationList } from '../../pages/notifications/notifications.service';
-import { getScreeningQuestions } from '../../pages/job-apply/apply/apply.services';
+import { getMessagesById, getParticipantsById } from '@pages/chat/message-detail/message-detail.services';
+import { createChats } from '@pages/chat/new-chat/new-chat.services';
+import { getActiveJobs, getArchivedJobs, getDraftJobs } from '@pages/job-create/my-jobs/my-jobs.services';
+import { getFeedList } from '@pages/feed/mobile/mobile.service';
+import { getComments, getPostDetail } from '@pages/feed/post-detail/post-detail.service';
+import { getJobCategories } from '@pages/job-create/info/info.services';
+import { getNotificationList } from '@pages/notifications/notifications.service';
+import { getScreeningQuestions } from '@pages/job-apply/apply/apply.services';
 import {
   getAwaitingReviewList,
   getDeclinedApplicants,
   getEndedList,
   getOnGoingList,
   getPendingApplicants,
-} from '../../pages/job-apply/my-jobs/my-jobs.services';
+} from '@pages/job-apply/my-jobs/my-jobs.services';
 import {
   getApplicantDetail,
   getJobOverview,
   jobOfferRejectLoader,
-} from '../../pages/job-offer-reject/job-offer-reject.services';
-import { receivedOfferLoader } from '../../pages/offer-received/offer-received.services';
+} from '@pages/job-offer-reject/job-offer-reject.services';
+import { receivedOfferLoader } from '@pages/offer-received/offer-received.services';
 import { endpoint } from '../endpoints';
-import { jobsPageLoader } from 'src/pages/jobs/jobs.loader';
-import { profileUserPageLoader } from 'src/pages/profile-user/profile-user.loader';
-import { AchievementsPageLoader } from 'src/pages/achievements/achievements.loader';
-import { profileOrganizationPageLoader } from 'src/pages/profile-organization/profile-organization.loader';
-import { getSettingsItems } from 'src/pages/notifications/settings/settings.service';
-import { getJobList } from 'src/pages/jobs/jobs.services';
-import { getCreditCardInfo, getCreditCardInfoById } from 'src/pages/payment/payment.service';
-import { getMissionsList, getSrtipeProfile } from 'src/pages/wallet/wallet.service';
-import { search } from 'src/pages/search/desktop/search.services';
-import store from 'src/store/store';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
+import { jobsPageLoader } from '@pages/jobs/jobs.loader';
+import { profileUserPageLoader } from '@pages/profile-user/profile-user.loader';
+import { AchievementsPageLoader } from '@pages/achievements/achievements.loader';
+import { profileOrganizationPageLoader } from '@pages/profile-organization/profile-organization.loader';
+import { getSettingsItems } from '@pages/notifications/settings/settings.service';
+import { getJobList } from '@pages/jobs/jobs.services';
+import { getCreditCardInfo, getCreditCardInfoById } from '@pages/payment/payment.service';
+import { getMissionsList, getSrtipeProfile } from '@pages/wallet/wallet.service';
+import { search } from '@pages/search/desktop/search.services';
+import store from '@store/store';
+import { setIdentityList } from '@store/reducers/identity.reducer';
 import { getIdentities } from '../api';
 import { useEffect, useState } from 'react';
-import { getJob } from 'src/pages/job-edit/info/info.services';
+import { getJob } from '@pages/job-edit/info/info.services';
 
 export const routes: Route[] = [
   {
@@ -315,12 +315,12 @@ export const routes: Route[] = [
           {
             path: 'screener-questions/created/:id',
             element: () =>
-              import('src/pages/job-create/screener-questions/created/created.container').then((m) => <m.Created />),
+              import('@pages/job-create/screener-questions/created/created.container').then((m) => <m.Created />),
           },
           {
             path: 'screener-questions',
             element: () =>
-              import('src/pages/job-create/screener-questions/screener-questions.container').then((m) => (
+              import('@pages/job-create/screener-questions/screener-questions.container').then((m) => (
                 <m.ScreenerQuestions />
               )),
           },
@@ -693,7 +693,7 @@ export const routes: Route[] = [
               {
                 path: '/settings',
                 element: () =>
-                  import('src/pages/notifications/settings/settings.container').then((m) => <m.Settings />),
+                  import('@pages/notifications/settings/settings.container').then((m) => <m.Settings />),
                 loader: () => getSettingsItems(),
               },
               {
@@ -723,16 +723,16 @@ export const routes: Route[] = [
               {
                 path: '/connections',
                 element: () =>
-                  import('src/pages/network/connections/connections.container').then((m) => <m.Connections />),
+                  import('@pages/network/connections/connections.container').then((m) => <m.Connections />),
               },
               {
                 path: '/followings',
                 element: () =>
-                  import('src/pages/network/followings/followings.container').then((m) => <m.Followings />),
+                  import('@pages/network/followings/followings.container').then((m) => <m.Followings />),
                 loader: () => getFollowings({ page: 1, name: '' }),
               },
               {
-                element: () => import('src/pages/network/network.container').then((m) => <m.Network />),
+                element: () => import('@pages/network/network.container').then((m) => <m.Network />),
               },
             ],
           },
@@ -747,7 +747,7 @@ export const routes: Route[] = [
           },
           {
             path: 'team/:id',
-            element: () => import('src/pages/team/team.container').then((m) => <m.Team />),
+            element: () => import('@pages/team/team.container').then((m) => <m.Team />),
             loader: async ({ params }) => {
               const requests = [
                 endpoint.get.members['org_id'](params.id, { page: 1 }),

@@ -1,7 +1,7 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { IdentityReq } from 'src/core/types';
+import { RootState } from '@store/store';
+import { IdentityReq } from '@core/types';
 import Card from '@atoms/card';
 import { Avatar } from '@atoms/avatar/avatar';
 import css from './profile-card.module.scss';

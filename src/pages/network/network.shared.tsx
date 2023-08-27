@@ -1,7 +1,7 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { IdentityReq } from 'src/core/types';
-import { RootState } from 'src/store/store';
+import { IdentityReq } from '@core/types';
+import { RootState } from '@store/store';
 
 export const useNetworkShared = () => {
   const navigate = useNavigate();

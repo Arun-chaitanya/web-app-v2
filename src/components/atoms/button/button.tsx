@@ -1,6 +1,6 @@
 import css from './button.module.scss';
 import { ButtonProps } from './button.types';
-import { hapticsImpactLight } from '../../../core/haptic/haptic';
+import { hapticsImpactLight } from '@core/haptic/haptic';
 import clsx from 'clsx';
 
 export function Button(props: ButtonProps): JSX.Element {

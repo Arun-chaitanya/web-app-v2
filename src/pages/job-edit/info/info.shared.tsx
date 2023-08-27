@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { useForm } from 'src/core/form';
+import { RootState } from '@store/store';
+import { useForm } from '@core/form';
 import { formModel } from './info.form';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
 import { getCityList, updateForm } from './info.services';
-import { citiesToCategories } from 'src/core/adaptors';
-import { CreatePostWizard } from 'src/store/reducers/createPostWizard.reducer';
+import { citiesToCategories } from '@core/adaptors';
+import { CreatePostWizard } from '@store/reducers/createPostWizard.reducer';
 
 export const useInfoShared = () => {
   const dispatch = useDispatch();

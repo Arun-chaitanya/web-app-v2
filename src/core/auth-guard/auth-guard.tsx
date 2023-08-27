@@ -1,5 +1,5 @@
 import { SyntheticEvent, useState } from 'react';
-import { useAuth } from '../../hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import { AuthGuardProps } from './auth-guard.types';
 import { Modal } from '@templates/modal/modal';
 import { Button } from '@atoms/button/button';

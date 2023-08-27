@@ -5,7 +5,7 @@ import { Avatar } from '@atoms/avatar/avatar';
 import { NotificationList } from '@organisms/notification-list/notification-list';
 import { useNotificationsShared } from '../notifications.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop = (): JSX.Element => {
   const navigate = useNavigate();

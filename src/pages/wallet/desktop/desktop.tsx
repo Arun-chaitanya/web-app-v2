@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
+import { RootState } from '@store/store';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import { WithdrawMissions } from '@templates/withdraw-missions';
 import { AlertModal } from '@organisms/alert-modal';
@@ -9,12 +9,12 @@ import { Dropdown } from '@atoms/dropdown-v2/dropdown';
 import Card from '@atoms/card';
 import { ProfileCard } from '@templates/profile-card';
 import { CardMenu } from '@molecules/card-menu/card-menu';
-import { printWhen } from 'src/core/utils';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
-import { IdentityReq } from 'src/core/types';
+import { printWhen } from '@core/utils';
+import { COUNTRIES } from '@constants/COUNTRIES';
+import { IdentityReq } from '@core/types';
 import { useWalletShared } from '../wallet.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import css from './dropdown.module.scss';
 import { DropdownProps } from './dropdown.types';
 import { Items } from './items/items';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 
 const initialState = { isListOpen: false, headerTitle: '' };
 

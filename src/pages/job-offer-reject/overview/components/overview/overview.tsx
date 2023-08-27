@@ -1,22 +1,22 @@
-import { skillsToCategory, socialCausesToCategory } from 'src/core/adaptors';
-import { translateProjectLength } from 'src/constants/PROJECT_LENGTH';
-import { translatePaymentType } from 'src/constants/PROJECT_PAYMENT_TYPE';
-import { translatePaymentTerms } from 'src/constants/PROJECT_PAYMENT_SCHEME';
-import { translatePaymentRange } from 'src/constants/PAYMENT_RANGE';
-import { translateProjectType } from 'src/constants/PROJECT_TYPES';
+import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
+import { translateProjectLength } from '@constants/PROJECT_LENGTH';
+import { translatePaymentType } from '@constants/PROJECT_PAYMENT_TYPE';
+import { translatePaymentTerms } from '@constants/PROJECT_PAYMENT_SCHEME';
+import { translatePaymentRange } from '@constants/PAYMENT_RANGE';
+import { translateProjectType } from '@constants/PROJECT_TYPES';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { translateExperienceLevel } from 'src/constants/EXPERIENCE_LEVEL';
+import { translateExperienceLevel } from '@constants/EXPERIENCE_LEVEL';
 import { ExpandableText } from '@atoms/expandable-text';
 import { Divider } from '@templates/divider/divider';
 import { OverviewProps } from './overview.types';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useNavigate } from '@tanstack/react-location';
-import { InfoModal } from 'src/pages/job-edit/info/info-modal';
-import { SkillsModal } from 'src/pages/job-edit/skills/skills-modal';
-import { SocialCausesModal } from 'src/pages/job-edit/social-causes/social-causes-modal';
+import { InfoModal } from '@pages/job-edit/info/info-modal';
+import { SkillsModal } from '@pages/job-edit/skills/skills-modal';
+import { SocialCausesModal } from '@pages/job-edit/social-causes/social-causes-modal';
 import css from './overview.module.scss';
 import { useState } from 'react';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 
 export const Overview = ({ data, questions }: OverviewProps): JSX.Element => {
   const navigate = useNavigate();

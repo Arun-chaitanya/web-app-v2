@@ -6,11 +6,11 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import { Avatar } from '@atoms/avatar/avatar';
 import { ExpandableText } from '@atoms/expandable-text';
 import { Modal } from '@templates/modal/modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { connectionListAdaptor, receivedRequestsAdaptor, sentRequestsAdaptor } from '../connections.service';
 import { useConnectionsShared } from '../connections.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import { post } from 'src/core/http';
+import { post } from '@core/http';
 
 export async function postFind(payload: { participants: string[] }): Promise<{ items: { id: string }[] }> {
   return post('chats/find', payload).then(({ data }) => data);

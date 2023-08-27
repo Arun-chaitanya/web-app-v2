@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { useMatch } from '@tanstack/react-location';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 import { BackLink } from '@molecules/back-link';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import { Accordion } from '@atoms/accordion/accordion';
 import Card from '@atoms/card';
 import { Button } from '@atoms/button/button';
 import { OfferModal } from '../../offer/offer-modal';
-import { printWhen } from 'src/core/utils';
-import { ApplicantResp } from 'src/core/types';
+import { printWhen } from '@core/utils';
+import { ApplicantResp } from '@core/types';
 import { jobOfferRejectLoader } from '../../job-offer-reject.services';
 import { useApplicantDetailShared } from '../applicant-detail.shared';
 import css from './desktop.module.scss';

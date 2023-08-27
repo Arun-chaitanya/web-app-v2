@@ -4,8 +4,8 @@ import { WithdrawMissions } from '@templates/withdraw-missions';
 import { AlertModal } from '@organisms/alert-modal';
 import { BankAccounts } from '@templates/bank-accounts';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
-import { printWhen } from 'src/core/utils';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
+import { printWhen } from '@core/utils';
+import { COUNTRIES } from '@constants/COUNTRIES';
 import { useWalletShared } from '../wallet.shared';
 import css from './mobile.module.scss';
 

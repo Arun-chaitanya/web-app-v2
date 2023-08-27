@@ -1,5 +1,5 @@
 import { ExpandableText } from '@atoms/expandable-text';
-import { toRelativeTime } from '../../../core/relative-time';
+import { toRelativeTime } from '@core/relative-time';
 import { Avatar } from '@atoms/avatar/avatar';
 import { ChatBox } from '@atoms/chat-box/chat-box';
 import { CommentProps } from './comment.types';

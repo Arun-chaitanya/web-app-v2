@@ -1,4 +1,4 @@
-import { ApplicantResp } from '../../../core/types';
+import { ApplicantResp } from '@core/types';
 
 export type Resolver = {
   applicantDetail: ApplicantResp;

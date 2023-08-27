@@ -1,8 +1,8 @@
 import { useNavigate } from '@tanstack/react-location';
 import { changePassword } from '../forget-password.service';
-import { handleError } from 'src/core/http';
+import { handleError } from '@core/http';
 import { formModel } from './password.form';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 
 export const usePasswordShared = () => {
   const navigate = useNavigate();

@@ -1,12 +1,12 @@
 import css from './impact-category-list.module.scss';
-import { ImpactCategoryItem } from '../../molecules/impact-category-item/impact-category-item';
+import { ImpactCategoryItem } from '@molecules/impact-category-item/impact-category-item';
 import { ImpactCategoryListProps } from './impact-category-list.types';
-import { BADGES, Badges } from '../../../constants/constants';
+import { BADGES, Badges } from '@constants/constants';
 import { CardSlideUp } from '@templates/card-slide-up/card-slide-up';
 import { useState } from 'react';
-import { BadgeDetailSlide } from 'src/pages/achievements/components/badge-detail-slide/badge-detail-slide';
+import { BadgeDetailSlide } from '@pages/achievements/components/badge-detail-slide/badge-detail-slide';
 import { Modal } from '@templates/modal/modal';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { isTouchDevice } from '@core/device-type-detector';
 
 export const ImpactCategoryList = (props: ImpactCategoryListProps): JSX.Element => {
   const { activeList, ...rest } = props;

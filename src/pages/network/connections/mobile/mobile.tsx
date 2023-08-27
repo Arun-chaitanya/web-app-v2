@@ -6,7 +6,7 @@ import { Avatar } from '@atoms/avatar/avatar';
 import { ExpandableText } from '@atoms/expandable-text';
 import { Accordion } from '@atoms/accordion/accordion';
 import { CardSlideUp } from '@templates/card-slide-up/card-slide-up';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { connectionListAdaptor, receivedRequestsAdaptor, sentRequestsAdaptor } from '../connections.service';
 import { useConnectionsShared } from '../connections.shared';
 import css from './mobile.module.scss';

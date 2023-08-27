@@ -2,7 +2,7 @@ import { Modal } from '@templates/modal/modal';
 import css from './skills-filter.module.scss';
 import { Search } from '@atoms/search/search';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { skillsToCategoryAdaptor } from 'src/core/adaptors';
+import { skillsToCategoryAdaptor } from '@core/adaptors';
 import { useState } from 'react';
 import { Button } from '@atoms/button/button';
 import { SkillsFilterProps } from './skills-filter.types';

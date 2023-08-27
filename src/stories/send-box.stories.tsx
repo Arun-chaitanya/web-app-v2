@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { SendBox } from '../components/molecules/send-box/send-box';
+import { SendBox } from '@molecules/send-box/send-box';
 
 export default {
   title: 'MOLECULES/SendBox',

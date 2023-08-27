@@ -4,11 +4,11 @@ import Card from '@atoms/card';
 import { Avatar } from '@atoms/avatar/avatar';
 import { Categories } from '@atoms/categories/categories';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { socialCausesToCategory } from 'src/core/adaptors';
-import { toRelativeTime } from 'src/core/relative-time';
+import { socialCausesToCategory } from '@core/adaptors';
+import { toRelativeTime } from '@core/relative-time';
 import { getList } from './people-list.services';
-import { printWhen } from 'src/core/utils';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
+import { printWhen } from '@core/utils';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 
 export const PeopleList = (props: PeopleListProps): JSX.Element => {
   const { data, onMorePageClick, showMorePage, ...rest } = props;

@@ -1,19 +1,19 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { useMemo, useState } from 'react';
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 import { cityDispatcher, showActionSheet, uploadImage } from './profile-organization-edit.services';
 import { generateFormModel } from './profile-organization-edit.form';
 import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
 import { ProfileReq } from '../profile-user/profile-user.types';
 import { Camera } from '@capacitor/camera';
-import { getFormValues } from 'src/core/form/customValidators/formValues';
-import { endpoint } from 'src/core/endpoints';
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
+import { getFormValues } from '@core/form/customValidators/formValues';
+import { endpoint } from '@core/endpoints';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
 import { useDispatch } from 'react-redux';
-import { PostUpdateProfileResp } from 'src/core/endpoints/index.types';
-import { dialog } from 'src/core/dialog/dialog';
-import { removedEmptyProps } from 'src/core/utils';
+import { PostUpdateProfileResp } from '@core/endpoints/index.types';
+import { dialog } from '@core/dialog/dialog';
+import { removedEmptyProps } from '@core/utils';
 
 export const useProfileOrganizationEditShared = () => {
   const organization = useMatch().data.user as ProfileReq;

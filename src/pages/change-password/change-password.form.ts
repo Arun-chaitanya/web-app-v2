@@ -1,5 +1,5 @@
-import { required, minLength } from '../../core/form';
-import { FormModel } from '../../core/form/useForm/useForm.types';
+import { required, minLength } from '@core/form';
+import { FormModel } from '@core/form/useForm/useForm.types';
 
 export const formModel: FormModel = {
   current_password: {

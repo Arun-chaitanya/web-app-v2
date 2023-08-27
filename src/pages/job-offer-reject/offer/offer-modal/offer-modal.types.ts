@@ -1,5 +1,5 @@
 import { ModalProps } from '@templates/modal/modal.types';
-import { ApplicantResp } from 'src/core/types';
+import { ApplicantResp } from '@core/types';
 
 export interface OfferModalProps extends Omit<ModalProps, 'children'> {
   applicantDetail: ApplicantResp;

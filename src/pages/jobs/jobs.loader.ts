@@ -1,6 +1,6 @@
-import { getIdentities } from 'src/core/api';
-import { setIdentityList } from 'src/store/reducers/identity.reducer';
-import store from 'src/store/store';
+import { getIdentities } from '@core/api';
+import { setIdentityList } from '@store/reducers/identity.reducer';
+import store from '@store/store';
 
 export async function jobsPageLoader() {
   try {

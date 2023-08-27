@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import Dapp from 'src/dapp';
+import Dapp from '@dapp';
 import { Item } from '@molecules/input-modal/input-modal.types';
-import { ControlPrimitiveValue } from 'src/core/form/useForm/useForm.types';
+import { ControlPrimitiveValue } from '@core/form/useForm/useForm.types';
 import { useChainId } from 'wagmi';
 import { findTokenRate } from './offer.services';
 

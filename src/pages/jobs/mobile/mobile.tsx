@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Avatar } from '@atoms/avatar/avatar';
 import { JobList } from '@organisms/job-list/job-list';
 import { Search } from '@atoms/search/search';
-import { hapticsImpactLight } from 'src/core/haptic/haptic';
-import { visibility } from 'src/store/reducers/menu.reducer';
+import { hapticsImpactLight } from '@core/haptic/haptic';
+import { visibility } from '@store/reducers/menu.reducer';
 import { useJobsShared } from '../jobs.shared';
 import css from './mobile.module.scss';
 

@@ -1,4 +1,4 @@
-import { useForm } from 'src/core/form';
+import { useForm } from '@core/form';
 import { formModel } from './credit-card.service';
 
 export const useCreditCardShared = () => {

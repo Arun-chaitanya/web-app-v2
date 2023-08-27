@@ -3,7 +3,7 @@ import { Header } from '@atoms/header-v2/header';
 import { Avatar } from '@atoms/avatar/avatar';
 import { AddMemberModal } from '../add-member-modal';
 import { SureModal } from '@templates/sure-modal';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { useTeamShared } from '../team.shared';
 import css from './mobile.module.scss';
 

@@ -1,5 +1,5 @@
 import { forwardRef, useState } from 'react';
-import { printWhen } from '../../../core/utils';
+import { printWhen } from '@core/utils';
 import css from './input.module.scss';
 import { InputProps } from './input.types';
 import clsx from 'clsx';

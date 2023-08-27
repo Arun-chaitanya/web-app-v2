@@ -1,4 +1,4 @@
-import { MissionsResp, StripeLinkResp, StripeProfileResp } from 'src/core/types';
+import { MissionsResp, StripeLinkResp, StripeProfileResp } from '@core/types';
 
 export type Resolver = { missionsList: MissionsResp; stripeProfile: StripeProfileResp };
 

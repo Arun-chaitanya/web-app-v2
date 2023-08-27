@@ -6,11 +6,11 @@ import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor'
 import { Toggle } from '@atoms/toggle';
 import { Accordion } from '@atoms/accordion/accordion';
 import { Button } from '@atoms/button/button';
-import { printWhen } from 'src/core/utils';
-import translate from 'src/translations';
+import { printWhen } from '@core/utils';
+import translate from '@translations';
 import { useSettingsShared } from '../settings.shared';
 import css from './desktop.module.scss';
-import { useAuth } from 'src/hooks/use-auth';
+import { useAuth } from '@hooks/use-auth';
 
 export const Desktop: React.FC = () => {
   const navigate = useNavigate();

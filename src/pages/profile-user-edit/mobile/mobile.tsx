@@ -6,11 +6,11 @@ import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import css from './mobile.module.scss';
 import { Textarea } from '@atoms/textarea/textarea';
 import { Dropdown } from '@atoms/dropdown-v2/dropdown';
-import { COUNTRIES } from 'src/constants/COUNTRIES';
-import { COUNTRY_CODES } from 'src/constants/COUNTRY_CODE';
+import { COUNTRIES } from '@constants/COUNTRIES';
+import { COUNTRY_CODES } from '@constants/COUNTRY_CODE';
 import { Category } from '@molecules/category/category';
-import { skillsToCategoryAdaptor, socialCausesToCategoryAdaptor } from 'src/core/adaptors';
-import { ProfileReq } from 'src/pages/profile-organization/profile-organization.types';
+import { skillsToCategoryAdaptor, socialCausesToCategoryAdaptor } from '@core/adaptors';
+import { ProfileReq } from '@pages/profile-organization/profile-organization.types';
 import { useProfileUserEditShared } from '../profile-user-edit.shared';
 
 export const Mobile = (): JSX.Element => {

@@ -1,4 +1,4 @@
-import { ContactItem } from "src/components/molecules/contact-item/contact-item.types";
+import { ContactItem } from "@molecules/contact-item/contact-item.types";
 import { FollowingsReq } from "src/core/types";
 
 export function followingToContactListAdaptor(following: FollowingsReq): ContactItem {

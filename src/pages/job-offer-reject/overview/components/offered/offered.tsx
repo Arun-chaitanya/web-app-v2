@@ -1,12 +1,12 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import { Accordion } from '@atoms/accordion/accordion';
 import { ApplicantListHire } from '@molecules/applicant-list-hire/applicant-list-hire';
-import { endpoint } from '../../../../../core/endpoints';
+import { endpoint } from '@core/endpoints';
 import css from './offered.module.scss';
 import { jobToApplicantListAdaptor } from './offered.services';
 import { OfferedProps } from './offered.types';
-import { Loader } from 'src/pages/job-offer-reject/job-offer-reject.types';
-import { isTouchDevice } from 'src/core/device-type-detector';
+import { Loader } from '@pages/job-offer-reject/job-offer-reject.types';
+import { isTouchDevice } from '@core/device-type-detector';
 
 export const Offered = (props: OfferedProps): JSX.Element => {
   const navigate = useNavigate();

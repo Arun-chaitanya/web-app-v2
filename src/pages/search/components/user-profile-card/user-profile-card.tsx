@@ -1,16 +1,16 @@
 import Card from '@atoms/card';
 import css from './user-profile-card.module.scss';
 import { Avatar } from '@atoms/avatar/avatar';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { Divider } from '@templates/divider/divider';
 import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
 import { Button } from '@atoms/button/button';
 import { UserProfileCardProps } from './user-profile-card.types';
-import { COUNTRIES_DICT } from 'src/constants/COUNTRIES';
-import { skillsToCategory, socialCausesToCategory } from 'src/core/adaptors';
+import { COUNTRIES_DICT } from '@constants/COUNTRIES';
+import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';
 import { useSelector } from 'react-redux';
-import { RootState } from 'src/store/store';
-import { ConnectStatus, IdentityReq } from 'src/core/types';
+import { RootState } from '@store/store';
+import { ConnectStatus, IdentityReq } from '@core/types';
 import { useState } from 'react';
 import clsx from 'clsx';
 

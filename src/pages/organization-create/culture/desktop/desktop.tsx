@@ -3,7 +3,7 @@ import Card from '@atoms/card';
 import { Steps } from '@atoms/steps/steps';
 import { Textarea } from '@atoms/textarea/textarea';
 import css from './desktop.module.scss';
-import { required, useForm } from '../../../../core/form';
+import { required, useForm } from '@core/form';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import clsx from 'clsx';
 

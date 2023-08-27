@@ -1,5 +1,5 @@
 import { useNavigate } from '@tanstack/react-location';
-import Dapp from 'src/dapp';
+import Dapp from '@dapp';
 import { Header } from '@atoms/header-v2/header';
 import { Button } from '@atoms/button/button';
 import { JobDescrioptionCard } from '@templates/job-description-card';
@@ -7,7 +7,7 @@ import { PaymentSummaryCard } from '@templates/payment-summary-card';
 import { PaymentMethods } from '@templates/payment-methods';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import { Sticky } from '@templates/sticky';
-import { printWhen } from 'src/core/utils';
+import { printWhen } from '@core/utils';
 import { usePaymentShared } from '../payment.shared';
 import css from './mobile.module.scss';
 
