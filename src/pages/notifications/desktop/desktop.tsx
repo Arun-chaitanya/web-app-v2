@@ -1,7 +1,7 @@
 import { useNavigate } from '@tanstack/react-location';
 import { TwoColumnCursor } from '@templates/two-column-cursor/two-column-cursor';
 import Card from '@atoms/card';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { NotificationList } from '@organisms/notification-list/notification-list';
 import { useNotificationsShared } from '../notifications.shared';
 import css from './desktop.module.scss';

@@ -1,7 +1,7 @@
 import css from './accordion.module.scss';
 import { AccordionProps } from './accordion.types';
 
-export const Accordion = ({
+const Accordion = ({
   title,
   children,
   id,
@@ -21,3 +21,5 @@ export const Accordion = ({
     </div>
   );
 };
+
+export default Accordion;

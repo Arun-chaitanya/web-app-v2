@@ -1,10 +1,11 @@
 import { CSSProperties } from 'react';
-import { Avatar } from '../avatar/avatar';
-import { ChatBox } from '../chat-box/chat-box';
+
+import Avatar from '../avatar';
+import ChatBox from '../chat-box';
 import css from './message.module.scss';
 import { MessageProps } from './message.types';
 
-export const Message = (props: MessageProps): JSX.Element => {
+const Message = (props: MessageProps): JSX.Element => {
   const { text, type, userType, img, ...rest } = props;
 
   function setStyle(type: MessageProps['type']): CSSProperties {
@@ -29,3 +30,5 @@ export const Message = (props: MessageProps): JSX.Element => {
     </div>
   );
 };
+
+export default Message;

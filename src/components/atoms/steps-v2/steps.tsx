@@ -1,8 +1,9 @@
 import { memo, useEffect, useState } from 'react';
+
 import css from './steps.module.scss';
 import { StepsProps } from './steps.types';
 
-export const Steps = (props: StepsProps): JSX.Element => {
+const Steps = (props: StepsProps): JSX.Element => {
   const { length, current, autoPlay, onStepClick, clickable = true, ...rest } = props;
   const steps: number[] = Array.from(Array(length).keys());
 
@@ -35,3 +36,5 @@ export const Steps = (props: StepsProps): JSX.Element => {
     </div>
   );
 };
+
+export default Steps;

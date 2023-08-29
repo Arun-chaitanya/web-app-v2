@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Search } from '@atoms/search/search';
-import { Steps } from '@atoms/steps/steps';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Search from '@atoms/search';
+import Steps from '@atoms/steps';
 import css from './desktop.module.scss';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import { SOCIAL_CAUSES } from '../social-causes.services';

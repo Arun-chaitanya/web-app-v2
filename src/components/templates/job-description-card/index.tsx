@@ -1,5 +1,5 @@
 import Card from '@atoms/card';
-import { Categories } from '@atoms/categories/categories';
+import Categories from '@atoms/categories';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { JobDescriptionCardProps } from './job-description-card.types';
 import css from './job-description-card.module.scss';

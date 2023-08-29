@@ -1,7 +1,7 @@
 import css from './categories.module.scss';
 import { CategoriesProps } from './categories.types';
 
-export const Categories = (props: CategoriesProps): JSX.Element => {
+const Categories = (props: CategoriesProps): JSX.Element => {
   const { list, ...rest } = props;
 
   return (
@@ -15,3 +15,5 @@ export const Categories = (props: CategoriesProps): JSX.Element => {
     </div>
   );
 };
+
+export default Categories;

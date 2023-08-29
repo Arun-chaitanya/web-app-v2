@@ -1,5 +1,5 @@
 import { useMatch, useNavigate } from '@tanstack/react-location';
-import { Accordion } from '@atoms/accordion/accordion';
+import Accordion from '@atoms/accordion';
 import { ApplicantListHire } from '@molecules/applicant-list-hire/applicant-list-hire';
 import { endpoint } from '@core/endpoints';
 import css from './offered.module.scss';

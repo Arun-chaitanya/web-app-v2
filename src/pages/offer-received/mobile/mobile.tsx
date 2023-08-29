@@ -1,8 +1,8 @@
 import Dapp from '@dapp';
-import { Accordion } from '@atoms/accordion/accordion';
-import { Button } from '@atoms/button/button';
-import { Header } from '@atoms/header-v2/header';
-import { Typography } from '@atoms/typography/typography';
+import Accordion from '@atoms/accordion';
+import Button from '@atoms/button';
+import Header from '@atoms/header-v2';
+import Typography from '@atoms/typography';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { Divider } from '@templates/divider/divider';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
@@ -14,7 +14,7 @@ import { printWhen } from '@core/utils';
 import { useOfferReceivedShared, useWalletShared } from '../offer-received.shared';
 import css from './mobile.module.scss';
 import { BankAccounts } from '@templates/bank-accounts';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Dropdown from '@atoms/dropdown-v2';
 import { COUNTRIES } from '@constants/COUNTRIES';
 
 export const Mobile = (): JSX.Element => {

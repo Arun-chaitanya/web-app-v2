@@ -1,8 +1,8 @@
-import { Message } from '@atoms/message/message.types';
+import { MessageType } from '@atoms/message';
 import { CSSProperties } from 'react';
 
 export interface ChatListProps extends CSSProperties {
-  list: Message[];
+  list: MessageType[];
   loadMore?: (p: number) => void;
   hasMore?: boolean;
 }

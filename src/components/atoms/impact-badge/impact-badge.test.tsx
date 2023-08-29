@@ -1,6 +1,7 @@
-import {render, screen} from '@testing-library/react';
-import {ImpactBadge} from './impact-badge';
+import ImpactBadge from './impact-badge';
+
 import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
 
 describe('impact-badge', () => {
   test('should set proper badge color', () => {

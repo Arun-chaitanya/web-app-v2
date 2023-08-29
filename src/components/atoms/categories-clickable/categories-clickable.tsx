@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import css from './categories-clickable.module.scss';
 import { CategoriesClickableProps } from './categories-clickable.types';
 
@@ -19,7 +20,7 @@ function hasReachedLimit(list: string[], min?: number, max?: number): boolean {
   return false;
 }
 
-export const CategoriesClickable = (props: CategoriesClickableProps): JSX.Element => {
+const CategoriesClickable = (props: CategoriesClickableProps): JSX.Element => {
   const { list, clickable = false, selected = [], onChange, ...rest } = props;
   const [selectedList, setSelectedList] = useState<string[]>(selected);
 
@@ -56,3 +57,5 @@ export const CategoriesClickable = (props: CategoriesClickableProps): JSX.Elemen
     </div>
   );
 };
+
+export default CategoriesClickable;

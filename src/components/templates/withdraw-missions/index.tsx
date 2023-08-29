@@ -1,4 +1,4 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
 import { printWhen } from '@core/utils';
 import { getFlooredFixed } from '@core/numbers';

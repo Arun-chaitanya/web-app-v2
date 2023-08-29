@@ -1,7 +1,7 @@
-import { ToggleProps } from './toggle.types';
 import css from './toggle.module.scss';
+import { ToggleProps } from './toggle.types';
 
-export const Toggle: React.FC<ToggleProps> = ({ checked, name, onChange }) => {
+const Toggle: React.FC<ToggleProps> = ({ checked, name, onChange }) => {
   return (
     <div className={css.container}>
       <input
@@ -15,3 +15,5 @@ export const Toggle: React.FC<ToggleProps> = ({ checked, name, onChange }) => {
     </div>
   );
 };
+
+export default Toggle;

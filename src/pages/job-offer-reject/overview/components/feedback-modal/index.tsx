@@ -1,6 +1,6 @@
-import { Textarea } from '@atoms/textarea/textarea';
+import Textarea from '@atoms/textarea';
 import { Modal } from '@templates/modal/modal';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { FeedbackModalProps } from './feedback-modal.types';
 import css from './feedback-modal.module.scss';

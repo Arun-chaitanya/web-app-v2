@@ -1,6 +1,7 @@
+import Input from './input';
+
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Input } from './input';
 
 describe('Input', () => {
   test('should update input value with given value from user', async () => {
@@ -16,7 +17,7 @@ describe('Input', () => {
   test('should call onChange with raw value', async () => {
     const user = userEvent.setup();
     const onChange = jest.fn();
-    render(<Input onValueChange={onChange} label="email" />);
+    render(<Input onChange={onChange} label="email" />);
     const textbox = screen.getByRole('textbox');
 
     await user.type(textbox, 'typed value');

@@ -1,9 +1,9 @@
 import css from './desktop.module.scss';
-import { Button } from '@atoms/button/button';
-import { Link } from '@atoms/link/link';
-import { Typography } from '@atoms/typography/typography';
+import Button from '@atoms/button';
+import Link from '@atoms/link';
+import Typography from '@atoms/typography';
 import { BottomStatic } from '@templates/bottom-static/bottom-static';
-import { Input } from '@atoms/input/input';
+import Input from '@atoms/input';
 import { useSignUpUserCompleteShared } from '../sign-up-user-complete.shared';
 
 export const Desktop = (): JSX.Element => {

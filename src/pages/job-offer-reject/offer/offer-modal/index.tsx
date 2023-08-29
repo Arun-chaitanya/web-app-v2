@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import Dapp from '@dapp';
 import { WebModal } from '@templates/web-modal';
-import { Input } from '@atoms/input/input';
-import { Textarea } from '@atoms/textarea/textarea';
+import Input from '@atoms/input';
+import Textarea from '@atoms/textarea';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { InputModal } from '@molecules/input-modal';
 import { Item } from '@molecules/input-modal/input-modal.types';

@@ -1,9 +1,10 @@
 import { CSSProperties } from 'react';
+
 import css from './password-quality.module.scss';
 import { validatorsRecord } from './password-quality.services';
 import { PasswordQualityProps, Validator } from './password-quality.types';
 
-export const PasswordQuality = (props: PasswordQualityProps): JSX.Element => {
+const PasswordQuality = (props: PasswordQualityProps): JSX.Element => {
   const { value, validators } = props;
 
   function setColor(amount: number, name: Validator['name']): CSSProperties {
@@ -26,3 +27,5 @@ export const PasswordQuality = (props: PasswordQualityProps): JSX.Element => {
     </div>
   );
 };
+
+export default PasswordQuality;

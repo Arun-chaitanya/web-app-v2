@@ -3,7 +3,7 @@ import { useMatch, useNavigate } from '@tanstack/react-location';
 import store from '@store/store';
 import { hideSpinner, showSpinner } from '@store/reducers/spinner.reducer';
 import css from './hired.module.scss';
-import { Accordion } from '@atoms/accordion/accordion';
+import Accordion from '@atoms/accordion';
 import { missionToApplicantListPayAdaptor } from '../../../job-offer-reject.services';
 import { HiredProps } from './hired.types';
 import { Loader } from '@pages/job-offer-reject/job-offer-reject.types';

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from '@tanstack/react-location';
-import { Accordion } from '@atoms/accordion/accordion';
-import { Header } from '@atoms/header/header';
+import Accordion from '@atoms/accordion';
+import Header from '@atoms/header';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
-import { Toggle } from '@atoms/toggle';
-import { Button } from '@atoms/button/button';
+import Toggle from '@atoms/toggle';
+import Button from '@atoms/button';
 import { printWhen } from '@core/utils';
 import translate from '@translations';
 import { useSettingsShared } from '../settings.shared';

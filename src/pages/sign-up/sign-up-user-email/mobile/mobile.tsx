@@ -1,9 +1,9 @@
 import css from './mobile.module.scss';
 import { REGEX } from '@constants/REGEX';
-import { Button } from '@atoms/button/button';
-import { Input } from '@atoms/input/input';
-import { Link } from '@atoms/link/link';
-import { Typography } from '@atoms/typography/typography';
+import Button from '@atoms/button';
+import Input from '@atoms/input';
+import Link from '@atoms/link';
+import Typography from '@atoms/typography';
 import { BottomStatic } from '@templates/bottom-static/bottom-static';
 import { useSignUpUserEmailShared } from '../sign-up-user-email.shared';
 

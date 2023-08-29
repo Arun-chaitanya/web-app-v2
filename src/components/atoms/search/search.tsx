@@ -1,8 +1,9 @@
 import { ChangeEvent } from 'react';
+
 import css from './search.module.scss';
 import { SearchProps } from './search.types';
 
-export const Search = (props: SearchProps): JSX.Element => {
+const Search = (props: SearchProps): JSX.Element => {
   const { value, defaultValue, onValueChange, onChange, placeholder, ...rest } = props;
 
   function onInputChange(e: ChangeEvent<HTMLInputElement>) {
@@ -44,3 +45,5 @@ export const Search = (props: SearchProps): JSX.Element => {
     </div>
   );
 };
+
+export default Search;

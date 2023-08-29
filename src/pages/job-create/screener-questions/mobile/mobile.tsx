@@ -1,9 +1,9 @@
 import store from '@store/store';
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Toggle } from '@atoms/toggle';
-import { Input } from '@atoms/input/input';
+import Textarea from '@atoms/textarea';
+import Toggle from '@atoms/toggle';
+import Input from '@atoms/input';
 import {
   resetCreatedQuestion,
   resetQuestions,

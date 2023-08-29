@@ -1,7 +1,7 @@
 import { ORGANIZATION_TYPE } from '@constants/ORGANIZATION_TYPE';
-import { Button } from '@atoms/button/button';
-import { Steps } from '@atoms/steps/steps';
-import { TypeSelector } from '@atoms/type-selector/type-selector';
+import Button from '@atoms/button';
+import Steps from '@atoms/steps';
+import TypeSelector from '@atoms/type-selector';
 import css from './mobile.module.scss';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 

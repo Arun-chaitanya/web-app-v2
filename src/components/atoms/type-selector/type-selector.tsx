@@ -1,8 +1,9 @@
 import { useState } from 'react';
+
 import css from './type-selector.module.scss';
 import { TypeSelectorProps } from './type-selector.types';
 
-export const TypeSelector = (props: TypeSelectorProps): JSX.Element => {
+const TypeSelector = (props: TypeSelectorProps): JSX.Element => {
   const { list, onChange, ...rest } = props;
   const [value, setValue] = useState<string>(props.value);
 
@@ -28,3 +29,5 @@ export const TypeSelector = (props: TypeSelectorProps): JSX.Element => {
     </div>
   );
 };
+
+export default TypeSelector;

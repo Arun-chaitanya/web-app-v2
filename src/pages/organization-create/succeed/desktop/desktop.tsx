@@ -1,4 +1,4 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 import css from './desktop.module.scss';

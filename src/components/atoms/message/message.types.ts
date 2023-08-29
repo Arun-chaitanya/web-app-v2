@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-export interface Message {
+export interface MessageType {
   id: string;
   img: string;
   identityType: 'organizations' | 'users';

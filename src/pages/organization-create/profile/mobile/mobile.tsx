@@ -1,18 +1,18 @@
 import css from './mobile.module.scss';
 import { useState } from 'react';
 import { COUNTRIES } from '@constants/COUNTRIES';
-import { Button } from '@atoms/button/button';
-import { Input } from '@atoms/input/input';
-import { Steps } from '@atoms/steps/steps';
-import { Textarea } from '@atoms/textarea/textarea';
+import Button from '@atoms/button';
+import Input from '@atoms/input';
+import Steps from '@atoms/steps';
+import Textarea from '@atoms/textarea';
 import { Divider } from '@templates/divider/divider';
 import { formIsInvalid } from '../profile.services';
 import { formModel } from '../profile.form';
-import { Checkbox } from '@atoms/checkbox/checkbox';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Checkbox from '@atoms/checkbox';
+import Dropdown from '@atoms/dropdown-v2';
 import { getCityList } from '../../../job-create/info/info.services';
 import { citiesToCategories } from '@core/adaptors';
-import { DropdownItem } from '@atoms/dropdown-v2/dropdown.types';
+import { DropdownItem } from '@atoms/dropdown-v2';
 import { useOrganizationCreateShared } from '../../organization-create.shared';
 
 export const Mobile = (): JSX.Element => {

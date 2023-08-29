@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
+
+import { printWhen } from '@core/utils';
+
 import css from './dropdown.module.scss';
 import { DropdownProps } from './dropdown.types';
-import { Items } from './items/items';
-import { printWhen } from '@core/utils';
+import Items from './items';
 
 const initialState = { isListOpen: false, headerTitle: '' };
 
-export const Dropdown = (props: DropdownProps) => {
+const Dropdown = (props: DropdownProps) => {
   const { list, onGetValue, selectedValue, label, placeholder, containerClassName } = props;
 
   const [state, setState] = useState(initialState);
@@ -67,3 +69,5 @@ export const Dropdown = (props: DropdownProps) => {
     </div>
   );
 };
+
+export default Dropdown;

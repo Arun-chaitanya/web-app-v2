@@ -1,9 +1,9 @@
 import { useMatch } from '@tanstack/react-location';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
-import { Header } from '@atoms/header/header';
-import { Button } from '@atoms/button/button';
+import Header from '@atoms/header';
+import Button from '@atoms/button';
 import Card from '@atoms/card';
-import { Input } from '@atoms/input/input';
+import Input from '@atoms/input';
 import { Sticky } from '@templates/sticky';
 import { printWhen } from '@core/utils';
 import { endpoint } from '@core/endpoints';

@@ -1,8 +1,8 @@
 import { useNavigate } from '@tanstack/react-location';
 import { useDispatch } from 'react-redux';
-import { Button } from '@atoms/button/button';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Search } from '@atoms/search/search';
+import Button from '@atoms/button';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Search from '@atoms/search';
 import { setPostSkills } from '@store/reducers/createPostWizard.reducer';
 import { useSkillsShared } from '../skills.shared';
 import css from './mobile.module.scss';

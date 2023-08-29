@@ -2,9 +2,9 @@ import { useState } from 'react';
 import store from '@store/store';
 import { WebModal } from '@templates/web-modal';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Toggle } from '@atoms/toggle';
-import { Input } from '@atoms/input/input';
+import Textarea from '@atoms/textarea';
+import Toggle from '@atoms/toggle';
+import Input from '@atoms/input';
 import { CreatedModal } from '../created/created-modal';
 import { AlertModal } from '@organisms/alert-modal';
 import {

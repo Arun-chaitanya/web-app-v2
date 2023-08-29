@@ -1,10 +1,10 @@
-import { Otp } from '@atoms/otp/otp';
+import Otp from '@atoms/otp';
 import { BottomStatic } from '@templates/bottom-static/bottom-static';
 import { useSignUpUserVerificationShared } from '../sign-up-user-verification.shared';
 import css from './mobile.module.scss';
-import { Typography } from '@atoms/typography/typography';
-import { Button } from '@atoms/button/button';
-import { Link } from '@atoms/link/link';
+import Typography from '@atoms/typography';
+import Button from '@atoms/button';
+import Link from '@atoms/link';
 
 export const Mobile = (): JSX.Element => {
   const { otp, setOtp, onResendRequest, onSubmit, navigateToSignIn } = useSignUpUserVerificationShared();

@@ -4,7 +4,7 @@ import { useMatch } from '@tanstack/react-location';
 import { Loader } from './achievements.types';
 import { Header } from './components/header/header';
 import { ImpactCategoryList } from '@organisms/impact-category-list/impact-category-list';
-import { Tabs } from '@atoms/tabs/tabs';
+import Tabs from '@atoms/tabs';
 import { Tab } from '@atoms/tabs/tabs.types';
 import { JobHistoryList } from '@organisms/job-history-list/job-history-list';
 import { Tier } from './components/tier/tier';

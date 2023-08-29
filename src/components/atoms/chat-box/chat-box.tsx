@@ -1,8 +1,9 @@
-import css from './chat-box.module.scss';
 import { CSSProperties } from 'react';
+
+import css from './chat-box.module.scss';
 import { ChatBoxProps } from './chat-box.types';
 
-export const ChatBox = (props: ChatBoxProps): JSX.Element => {
+const ChatBox = (props: ChatBoxProps): JSX.Element => {
   const { type, children, ...rest } = props;
 
   function setStyle(type: ChatBoxProps['type']): CSSProperties {
@@ -26,3 +27,5 @@ export const ChatBox = (props: ChatBoxProps): JSX.Element => {
     </div>
   );
 };
+
+export default ChatBox;

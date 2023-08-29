@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux';
 import { WebModal } from '@templates/web-modal';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
+import CategoriesClickable from '@atoms/categories-clickable';
 import Card from '@atoms/card';
-import { Avatar } from '@atoms/avatar/avatar';
-import { TextClickableURLs } from '@atoms/text-clickable-urls';
+import Avatar from '@atoms/avatar';
+import TextClickableURLs from '@atoms/text-clickable-urls';
 import { RootState } from '@store/store';
 import { printWhen } from '@core/utils';
 import { getFeedList, submitPost, uploadImage } from '../mobile/mobile.service';

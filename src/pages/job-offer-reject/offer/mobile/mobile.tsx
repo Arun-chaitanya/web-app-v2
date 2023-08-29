@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react';
 import { useMatch, useNavigate } from '@tanstack/react-location';
 import Dapp from '@dapp';
-import { Header } from '@atoms/header/header';
-import { Input } from '@atoms/input/input';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Button } from '@atoms/button/button';
+import Header from '@atoms/header';
+import Input from '@atoms/input';
+import Textarea from '@atoms/textarea';
+import Button from '@atoms/button';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 import { InputModal } from '@molecules/input-modal';
 import { Item } from '@molecules/input-modal/input-modal.types';

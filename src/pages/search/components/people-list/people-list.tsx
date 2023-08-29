@@ -1,9 +1,9 @@
 import css from './people-list.module.scss';
 import { People, PeopleListProps } from './people-list.types';
 import Card from '@atoms/card';
-import { Avatar } from '@atoms/avatar/avatar';
-import { Categories } from '@atoms/categories/categories';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
+import Avatar from '@atoms/avatar';
+import Categories from '@atoms/categories';
+import CategoriesClickable from '@atoms/categories-clickable';
 import { socialCausesToCategory } from '@core/adaptors';
 import { toRelativeTime } from '@core/relative-time';
 import { getList } from './people-list.services';

@@ -1,8 +1,9 @@
 import { hapticsImpactLight } from '@core/haptic/haptic';
+
 import css from './header.module.scss';
 import { HeaderProps } from './header.types';
 
-export const Header = (props: HeaderProps): JSX.Element => {
+const Header = (props: HeaderProps): JSX.Element => {
   const { onBack, title, ...rest } = props;
 
   function onBackClick() {
@@ -18,3 +19,5 @@ export const Header = (props: HeaderProps): JSX.Element => {
     </div>
   );
 };
+
+export default Header;

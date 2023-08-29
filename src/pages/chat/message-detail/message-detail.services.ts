@@ -8,7 +8,7 @@ import {
 } from '@core/types';
 import { get, post } from '@core/http';
 import { MessagesReq } from '@core/types';
-import { Message } from '@atoms/message/message.types';
+import { MessageType } from '@atoms/message';
 import { OnPostMessageParams, ParticipantDetail } from './message-detail.types';
 
 export async function getMessagesById(payload: { id: string; page: number }): Promise<Pagination<MessagesReq[]>> {
@@ -33,7 +33,7 @@ export async function setMessageAsRead(id: string, messageId: string): Promise<b
   });
 }
 
-export async function onPostMessage(payload: OnPostMessageParams): Promise<Message> {
+export async function onPostMessage(payload: OnPostMessageParams): Promise<MessageType> {
   const resp = await postMessage(payload);
   return {
     id: resp.id,
@@ -70,7 +70,7 @@ export function chatListAdaptor(
   myId: string,
   messagesList: MessagesReq[] = [],
   participants: ParticipantsReq[] = []
-): Message[] {
+): MessageType[] {
   const list = messagesList.map((msg) => {
     const isMyMessage = msg.identity_id === myId;
     return {

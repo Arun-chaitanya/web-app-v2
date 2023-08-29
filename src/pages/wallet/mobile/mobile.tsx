@@ -1,9 +1,9 @@
-import { Header } from '@atoms/header/header';
+import Header from '@atoms/header';
 import { TopFixedMobile } from '@templates/top-fixed-mobile/top-fixed-mobile';
 import { WithdrawMissions } from '@templates/withdraw-missions';
 import { AlertModal } from '@organisms/alert-modal';
 import { BankAccounts } from '@templates/bank-accounts';
-import { Dropdown } from '@atoms/dropdown-v2/dropdown';
+import Dropdown from '@atoms/dropdown-v2';
 import { printWhen } from '@core/utils';
 import { COUNTRIES } from '@constants/COUNTRIES';
 import { useWalletShared } from '../wallet.shared';

@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Message } from '@atoms/message/message';
+import Message from '@atoms/message';
 
 export default {
   title: 'MOLECULES/Message',

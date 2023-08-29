@@ -1,12 +1,13 @@
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
+
 import { printWhen } from '@core/utils';
+
 import css from './dropdown.module.scss';
 import { DropdownItem, DropdownProps } from './dropdown.types';
-import { ControlPrimitiveValue } from '@core/form/useForm/useForm.types';
 
 const submenuHeightREM = 2.75;
 
-export const Dropdown = (props: DropdownProps): JSX.Element => {
+const Dropdown = (props: DropdownProps): JSX.Element => {
   const { size = 5 } = props;
   const ref = useRef<HTMLInputElement>(null);
 
@@ -72,3 +73,5 @@ export const Dropdown = (props: DropdownProps): JSX.Element => {
     </div>
   );
 };
+
+export default Dropdown;

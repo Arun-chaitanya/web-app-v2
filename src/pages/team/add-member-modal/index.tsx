@@ -1,5 +1,5 @@
 import { Modal } from '@templates/modal/modal';
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { ProfileView } from '@molecules/profile-view/profile-view';
 import { AddMemberModalProps } from './add-member-modal.types';
 import css from './add-member-modal.module.scss';

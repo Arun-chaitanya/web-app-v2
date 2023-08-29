@@ -1,10 +1,10 @@
 import Card from '@atoms/card';
 import css from './user-profile-card.module.scss';
-import { Avatar } from '@atoms/avatar/avatar';
+import Avatar from '@atoms/avatar';
 import { printWhen } from '@core/utils';
 import { Divider } from '@templates/divider/divider';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
-import { Button } from '@atoms/button/button';
+import CategoriesClickable from '@atoms/categories-clickable';
+import Button from '@atoms/button';
 import { UserProfileCardProps } from './user-profile-card.types';
 import { COUNTRIES_DICT } from '@constants/COUNTRIES';
 import { skillsToCategory, socialCausesToCategory } from '@core/adaptors';

@@ -1,8 +1,9 @@
 import { printWhen } from '@core/utils';
+
 import css from './tier-badge.module.scss';
 import { TierBadgeProps } from './tier-badge.types';
 
-export const TierBadge = (props: TierBadgeProps): JSX.Element => {
+const TierBadge = (props: TierBadgeProps): JSX.Element => {
   const { size = '3.625rem', withLabel = true } = props;
 
   function setLabelFontSize(size: string) {
@@ -49,3 +50,5 @@ export const TierBadge = (props: TierBadgeProps): JSX.Element => {
     </div>
   );
 };
+
+export default TierBadge;

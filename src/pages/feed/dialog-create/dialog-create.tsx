@@ -1,9 +1,9 @@
 import { DialogCreateProps } from './dialog-create.types';
 import css from './dialog-create.module.scss';
-import { Avatar } from '@atoms/avatar/avatar';
-import { Dropdown } from '@atoms/dropdown/dropdown';
-import { Textarea } from '@atoms/textarea/textarea';
-import { Button } from '@atoms/button/button';
+import Avatar from '@atoms/avatar';
+import Dropdown from '@atoms/dropdown';
+import Textarea from '@atoms/textarea';
+import Button from '@atoms/button';
 import { Dialog } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { DialogReview } from '../dialog-review/dialog-review';

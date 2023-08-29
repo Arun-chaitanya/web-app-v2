@@ -1,7 +1,7 @@
 import css from './change-password.module.scss';
-import { Button } from '@atoms/button/button';
-import { Header } from '@atoms/header/header';
-import { Input } from '@atoms/input/input';
+import Button from '@atoms/button';
+import Header from '@atoms/header';
+import Input from '@atoms/input';
 import { BottomStatic } from '@templates/bottom-static/bottom-static';
 import { useChangePasswordShared } from './change-password.shared';
 

@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import css from './textarea.module.scss';
-import { TextareaProps } from './textarea.types';
+
 import { printWhen } from '@core/utils';
 
-export const Textarea = (props: TextareaProps): JSX.Element => {
+import css from './textarea.module.scss';
+import { TextareaProps } from './textarea.types';
+
+const Textarea = (props: TextareaProps): JSX.Element => {
   const [outline, setOutline] = useState(false);
   const { optional = false, register, errors = [], variant = 'outline', limit, ...rest } = props;
 
@@ -58,3 +60,5 @@ export const Textarea = (props: TextareaProps): JSX.Element => {
     </div>
   );
 };
+
+export default Textarea;

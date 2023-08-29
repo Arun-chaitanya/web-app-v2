@@ -1,14 +1,13 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {LevelBadge} from '@atoms/level-badge/level-badge';
+import LevelBadge from '@atoms/level-badge';
+
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'ATOM/LevelBadge',
   component: LevelBadge,
 } as ComponentMeta<typeof LevelBadge>;
 
-const Template: ComponentStory<typeof LevelBadge> = (args) => (
-  <LevelBadge {...args} />
-);
+const Template: ComponentStory<typeof LevelBadge> = (args) => <LevelBadge {...args} />;
 
 export const Primary = Template.bind({});
 

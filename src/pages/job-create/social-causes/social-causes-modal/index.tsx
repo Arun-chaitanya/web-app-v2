@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { WebModal } from '@templates/web-modal';
-import { Search } from '@atoms/search/search';
-import { CategoriesClickable } from '@atoms/categories-clickable/categories-clickable';
+import Search from '@atoms/search';
+import CategoriesClickable from '@atoms/categories-clickable';
 import { SkillsModal } from '@pages/job-create/skills/skills-modal';
 import { setPostCausesTags } from '@store/reducers/createPostWizard.reducer';
 import { SocialCausesModalProps } from './social-causes-modal.types';

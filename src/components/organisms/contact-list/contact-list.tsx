@@ -1,4 +1,4 @@
-import { Search } from '@atoms/search/search';
+import Search from '@atoms/search';
 import { ContactItem } from '@molecules/contact-item/contact-item';
 import css from './contact-list.module.scss';
 import { ContactListProps } from './contact-list.types';

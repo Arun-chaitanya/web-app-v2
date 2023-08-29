@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Input } from '@atoms/input/input';
+import Input from '@atoms/input';
 import { Modal } from '@templates/modal/modal';
 import { InputProps } from '@atoms/input/input.types';
 import { debounce } from '@core/utils';

@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Otp } from '@atoms/otp/otp';
+import Otp from '@atoms/otp';
 
 export default {
   title: 'ATOM/Otp',

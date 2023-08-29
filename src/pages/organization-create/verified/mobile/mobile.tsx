@@ -1,4 +1,4 @@
-import { Button } from '@atoms/button/button';
+import Button from '@atoms/button';
 import { getProcess } from '../verified.services';
 import css from './mobile.module.scss';
 import { useOrganizationCreateShared } from '../../organization-create.shared';

@@ -15,7 +15,7 @@ import { generateFormModel } from './apply.form';
 import { useForm } from '@core/form';
 import { dialog } from '@core/dialog/dialog';
 import { COUNTRIES_DICT } from '@constants/COUNTRIES';
-import { Textarea } from '@atoms/textarea/textarea';
+import Textarea from '@atoms/textarea';
 import { RadioGroup } from '@molecules/radio-group/radio-group';
 
 type useApplySharedProps = {
