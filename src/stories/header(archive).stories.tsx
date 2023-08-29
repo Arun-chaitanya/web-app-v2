@@ -1,5 +1,6 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {Header} from '@atoms/header (archive)/header';
+import Header from '@atoms/header (archive)/header';
+
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'ATOM/Header (archive)',
@@ -10,4 +11,4 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
 
-Primary.args = {onBackBtnClick: console.log};
+Primary.args = { onBackBtnClick: console.log };

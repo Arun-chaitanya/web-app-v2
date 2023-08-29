@@ -1,8 +1,9 @@
-import {Tab} from '@atoms/tabs/tabs.types';
-import {Tabs} from '@atoms/tabs/tabs';
-import {BodyProps} from './body.types';
-import {JobHistoryList} from '@organisms/job-history-list/job-history-list';
-import {LevelList} from '@organisms/level-list/level-list';
+import Tabs from '@atoms/tabs';
+import { Tab } from '@atoms/tabs';
+import { JobHistoryList } from '@organisms/job-history-list/job-history-list';
+import { LevelList } from '@organisms/level-list/level-list';
+
+import { BodyProps } from './body.types';
 
 const list = [
   {

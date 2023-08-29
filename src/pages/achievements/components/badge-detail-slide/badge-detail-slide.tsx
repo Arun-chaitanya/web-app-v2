@@ -1,10 +1,12 @@
-import css from './badge-detail-slide.module.scss';
-import TierBadge from '@atoms/tier-badge';
-import { ImpactBarSimple } from '@atoms/impact-bar-simple/impact-bar-simple';
-import { BadgeDetailSlideProps } from './badge-detail-slide.types';
-import { ImpactCategoryItem } from '@molecules/impact-category-item/impact-category-item';
-import { BADGES } from '@constants/constants';
 import ImpactBadge from '@atoms/impact-badge';
+import ImpactBarSimple from '@atoms/impact-bar-simple';
+import TierBadge from '@atoms/tier-badge';
+import { ImpactCategoryItem } from '@molecules/impact-category-item/impact-category-item';
+
+import { BADGES } from '@constants/constants';
+
+import css from './badge-detail-slide.module.scss';
+import { BadgeDetailSlideProps } from './badge-detail-slide.types';
 
 export const BadgeDetailSlide = ({ id = 'NO_POVERTY' }: BadgeDetailSlideProps): JSX.Element => {
   const b = BADGES[id];

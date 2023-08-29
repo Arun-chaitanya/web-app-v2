@@ -3,7 +3,7 @@ import { CSSProperties } from 'react';
 import css from './typography.module.scss';
 import { TypeList, TypographyProps } from './typography.types';
 
-export const Typography = (props: TypographyProps): JSX.Element => {
+const Typography = (props: TypographyProps): JSX.Element => {
   const { size = 'm', type = 'body', lineLimit, ...rest } = props;
 
   const sizeList: Record<string, CSSProperties> = {
