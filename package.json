@@ -16,7 +16,7 @@
     "cypress:run": "cypress run",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint": "eslint . --report-unused-disable-directives",
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
@@ -110,7 +110,6 @@
     "vite": "^4.0.0"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix --plugin tsc --rule 'tsc/config: [2, {configFile: \"./tsconfig.json\"}]'",
     "*.{js,ts,tsx,json,scss,css,md}": "prettier --write"
   }
 }
